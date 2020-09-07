@@ -1,17 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/* ==================================== INITIAL SETUP ==================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Ubuntu:wght@700&display=swap');
 
 :root {
   --black: #000;
-  --white: #fff;
+  --blue-light: #ecfbf9;
+  --blue-dark-100: #252946;
+  --blue-dark-80: #525872;
+  --card-bg: #fffcfc;
+  --grey-40: #9aa6a9;
+  --grey-80: #516064;
+  --grey-100: #2e3c40;
   --primary-bg: #ffffff;
+  --primary-color: #ee6a51;
+  --red-20: #ffe2e6;
+  --red-100: #ee6a51;
+  --red-dark: #e44c30;
   --secondary-bg: #373737;
+  --white: #fff;
+  --white-2: #fafafa;
 }
 
 * {
+  color: var(--grey-100);
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -19,28 +33,35 @@ body {
   z-index: -5;
 }
 
+/* ====================================== SCROLLBAR ====================================== */
+body::-webkit-scrollbar {
+  background-color: var(--white-2);
+  width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
+/* ===================================== NAVIGATION ===================================== */
+/* ================================ UNIVERSAL ================================ */
 nav {
-  width: 100%;
-  height: 60px;
   box-sizing: border-box;
-  padding: 10px 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  height: 60px;
   justify-content: space-between;
+  left: 0;
+  padding: 10px 100px;
   position: absolute;
   top: 0;
-  left: 0;
-  z-index: 99;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 100%;
+  z-index: 99;
 }
 
 nav.fixed {
-  position: fixed !important;
   animation: show 0.3s;
+  position: fixed !important;
 }
 
 @keyframes show {
@@ -53,104 +74,92 @@ nav.fixed {
   }
 }
 
+/* ================================== LOGO ================================== */
 nav .logo {
+  align-items: center;
+  color: var(--grey-100);
+  display: flex;
+  font-size: 2.75rem;
   font-weight: bold;
-  font-size: 2.25rem;
-  line-height: 40px;
   text-decoration: none;
-  text-transform: uppercase;
-  color: var(--black);
-  letter-spacing: 1.6px;
-  letter-spacing: 0.1rem;
-  font-weight: bold;
+  text-transform: capitalize;
 }
 
-nav .show {
-  position: relative;
-  width: 30px;
-  height: 5px;
-  background: var(--black);
-  float: right;
-  margin-top: 25px;
-  cursor: pointer;
+nav .logo .logo-icon {
+  height: 40px;
+  margin-right: 22px;
 }
 
-nav .show:before {
-  content: '';
-  position: absolute;
-  top: -12px;
-  left: 0;
-  width: 100%;
+nav .logo .logo-icon img {
   height: 100%;
-  background: var(--black);
+}
+
+/* ================================ BURGER IC ================================ */
+nav .show {
+  background: var(--grey-100);
+  cursor: pointer;
+  float: right;
+  height: 5px;
+  position: relative;
+  margin-top: 25px;
+  width: 30px;
+}
+
+nav .show:before,
+nav .show:after {
+  background: var(--grey-100);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+}
+
+nav .show::before {
+  top: -12px;
+  width: 100%;
 }
 
 nav .show:after {
-  content: '';
-  position: absolute;
   top: 12px;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background: var(--black);
 }
 
 nav .show.black,
 nav .show.black::before,
 nav .show.black::after {
-  background: var(--black);
+  background: var(--grey-100);
 }
 
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
+/* ================================ NAV  ITEM ================================ */
+nav ul,
 nav ul div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
-nav ul li {
+nav ul div li {
+  line-height: 35px;
   list-style: none;
   margin-left: 18px;
-  line-height: 35px;
 }
 
-nav ul li a {
-  position: relative;
+nav ul div li a {
+  color: var(--grey-80);
   display: inline-block;
-  font-size: 1.5rem;
-  text-transform: capitalize;
-  text-decoration: none;
-  color: var(--black);
+  font-size: 1.125rem;
   padding: 0 5px;
+  position: relative;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.3s;
 }
 
-nav ul li a.active::after,
-nav ul li a::after {
-  content: '';
-  height: 2px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  background: none repeat scroll 0 0 transparent;
-  background: var(--black);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+nav ul div li a.active {
+  font-weight: bold;
 }
 
-nav ul li a.active::after,
-nav ul li a:hover::after {
-  width: 100%;
-  left: 0;
-}
-
-nav ul li a.scroll::after {
-  background: var(--black) !important;
+nav ul div li a:hover,
+nav ul div li a.active {
+  color: var(--primary-color);
 }
 
 nav ul .hide {
@@ -158,40 +167,43 @@ nav ul .hide {
 }
 
 nav ul .hide.black {
-  color: var(--black);
+  color: var(--grey-100);
 }
 
+/* ================================ HIDE SHOW ================================ */
 nav .show,
 nav ul .hide {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   display: none;
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+/* ===================================== RESPONSIVE ===================================== */
+/* ================================= TABLET ================================= */
+@media screen and (max-width: 768px) {
+  /* ======================= UNIVERSAL ======================= */
   nav {
-    padding: 10px 60px;
+    padding: 10px 50px;
   }
 
+  /* ========================= LOGO ========================= */
   nav .logo {
     line-height: 60px;
   }
 
+  /* ======================= NAV  ITEM ======================= */
   nav ul {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100vh;
     background: var(--white);
-    text-align: center;
-    padding: 80px 0;
-    line-height: normal;
-    z-index: 999;
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
     display: block;
+    height: 100vh;
+    line-height: normal;
     padding: 20px 0;
+    position: fixed;
+    right: -100%;
+    text-align: center;
+    top: 0;
+    transition: 0.7s;
+    width: 100%;
+    z-index: 999;
   }
 
   nav ul.primary {
@@ -199,81 +211,44 @@ nav ul .hide {
   }
 
   nav ul div {
-    width: 100%;
+    display: block;
+    left: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-55%, -80%);
     transform: translate(-55%, -80%);
-    display: block;
+    width: 100%;
   }
 
-  nav ul li {
+  nav ul div li {
     margin-top: 10vh;
   }
 
+  nav ul .hide {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+  }
+
+  /* ======================= HIDE SHOW ======================= */
   nav .show,
   nav ul .hide {
     display: block;
   }
-
-  nav ul .hide {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
 }
 
-@media screen and (max-width: 425px) {
+/* ================================= MOBILE ================================= */
+@media screen and (max-width: 426px) {
+  /* ======================= UNIVERSAL ======================= */
   nav {
     padding: 10px 20px;
   }
 
+  /* ========================= LOGO ========================= */
   nav .logo {
-    font-size: 1rem;
-    line-height: 60px;
+    font-size: 1.5rem;
   }
 
-  nav ul {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100vh;
-    background: var(--white);
-    text-align: center;
-    padding: 80px 0;
-    line-height: normal;
-    z-index: 999;
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
-    display: block;
-    padding: 20px 0;
-  }
-
-  nav ul.primary {
-    background: var(--primary-bg);
-  }
-
-  nav ul div {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-55%, -80%);
-    transform: translate(-55%, -80%);
-    display: block;
-  }
-
-  nav ul li {
-    margin-top: 10vh;
-  }
-
-  nav .show,
-  nav ul .hide {
-    display: block;
-  }
-
+  /* ======================= BURGER IC ======================= */
   nav .show {
     height: 3px;
   }
@@ -284,11 +259,5 @@ nav ul .hide {
 
   nav .show:after {
     top: 10px;
-  }
-
-  nav ul .hide {
-    position: absolute;
-    top: 40px;
-    right: 40px;
   }
 }

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="237.95" height="237.95" viewBox="0 0 237.95 237.95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #f7d27f;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1.13" y1="266.84" x2="239.08" y2="243.56" gradientTransform="matrix(1, 0, 0, -1, 0, 374.29)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7bb3bf"/>
+      <stop offset="1" stop-color="#92ccd3"/>
+    </linearGradient>
+  </defs>
+  <title>Logo_noShadow</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <circle class="cls-1" cx="118.98" cy="118.98" r="118.98"/>
+        <path class="cls-2" d="M149,184l-51.19-9.91.49-2.54-.64,2.5-24.53-6.33-19.1-46L89.35,64.22l22.08,6.31L106.27,120l37.23,8.92,7.28-14.67L183,104.56Zm-22.3-9.59,19.19,3.72,28-65.42-19.49,5.84-7.21,14.52-2.31-1.15,2.31,1.15Zm-25.58-5,20.31,3.93,19.72-39.71-35.41-8.49Zm-24.2-6.1L96,168.29l9.81-94-14.13-4L59.8,122.21Z"/>
+        <path class="cls-3" d="M51.73,56.9l72.42-15.52-12.64,31Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

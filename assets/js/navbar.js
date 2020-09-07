@@ -18,7 +18,6 @@ $(document).ready(() => {
 
     if (scroll > screenHeight * 0.1) {
       $('nav').addClass('fixed');
-      $('nav ul li a').addClass('scroll');
       $('nav .show').removeClass('black');
       $('nav .hide').removeClass('black');
       $('nav ul').removeClass('primary');
@@ -27,16 +26,12 @@ $(document).ready(() => {
         backgroundColor: 'var(--white)',
         boxShadow: '0 6px 12px rgba(0, 0, 0, .1)',
       });
-      $('nav ul li a').css({
-        color: 'var(--black)',
-      });
       $('nav .logo').css({
         color: 'var(--black)',
         visibility: 'visible',
       });
     } else {
       $('nav').removeClass('fixed');
-      $('nav ul li a').removeClass('scroll');
       $('nav .show').addClass('black');
       $('nav .hide').addClass('black');
       $('nav ul').addClass('primary');
@@ -46,9 +41,6 @@ $(document).ready(() => {
         boxShadow: 'unset',
       });
       $('nav .logo').css({
-        color: 'var(--black)',
-      });
-      $('nav ul li a').css({
         color: 'var(--black)',
       });
     }
