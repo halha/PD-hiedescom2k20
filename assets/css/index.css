@@ -69,6 +69,7 @@ h2.title::after {
 
 p.desc {
   font-size: 1.25rem;
+  line-height: 1.5;
 }
 
 /* ====================================== SECTION 1 ====================================== */
@@ -147,7 +148,7 @@ p.desc {
 #sec1.container .top .right .img-box {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 50%;
   transform: translateY(-50%);
   width: 100%;
 }
@@ -491,18 +492,22 @@ p.desc {
   }
 
   #sec2.container .bg-img-box {
-    width: 25%;
     bottom: 5%;
+    width: 25%;
   }
 
   /* ======================= SECTION 3 ======================= */
   #sec3.container .content .card-box {
-    width: 100%;
+    box-sizing: border-box;
     flex-wrap: nowrap;
     justify-content: start;
     overflow-x: auto;
-    box-sizing: border-box;
     padding: 40px;
+    width: 100%;
+  }
+
+  #sec3.container .content .card-box::-webkit-scrollbar {
+    display: none;
   }
 
   #sec3.container .content .card-box .card {
@@ -536,10 +541,31 @@ p.desc {
     padding: 80px 35px 50px;
   }
 
+  .button {
+    font-size: 0.875rem;
+    padding: 14px 30px;
+  }
+
+  h1.title {
+    font-size: 2.25rem;
+  }
+
+  h2.title {
+    font-size: 1.5rem;
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  p.desc {
+    font-size: 1.125rem;
+  }
+
+  /* ======================= SECTION 1 ======================= */
   #sec1.container .top {
-    flex-flow: column;
-    height: 100vh;
     box-sizing: border-box;
+    flex-flow: column;
+    justify-content: space-around;
+    margin-bottom: 30px;
     padding-top: 80px;
     text-align: center;
   }
@@ -547,5 +573,149 @@ p.desc {
   #sec1.container .top .left,
   #sec1.container .top .right {
     width: 100%;
+  }
+
+  #sec1.container .top .left {
+    box-sizing: border-box;
+    padding: 0px 35px 0;
+  }
+
+  #sec1.container .top .left .desc {
+    width: 100%;
+  }
+
+  #sec1.container .top .left .search-box {
+    display: none;
+  }
+
+  #sec1.container .top .right .img-box {
+    width: 90%;
+  }
+
+  /* ======================= SECTION 2 ======================= */
+  #sec2.container .content p.desc {
+    width: 100%;
+  }
+
+  #sec2.container .content .data-box {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #sec2.container .content .data-box .data {
+    margin-bottom: 25px;
+    width: 50%;
+  }
+
+  #sec2.container .content .data-box .data::after {
+    height: 100%;
+  }
+
+  #sec2.container .content .data-box .data:nth-child(2)::after {
+    display: none;
+  }
+
+  #sec2.container .content .data-box .data h3.counter {
+    font-size: 1.875rem;
+    margin-bottom: 10px;
+  }
+
+  #sec2.container .content .data-box .data p {
+    font-size: 1rem;
+  }
+
+  #sec2.container .bg-img-box {
+    left: -5%;
+    width: 45%;
+  }
+
+  /* ======================= SECTION 3 ======================= */
+  #sec3.container {
+    padding: 80px 0 150px;
+  }
+
+  #sec3.container .content .card-box {
+    padding: 0 80px;
+  }
+
+  #sec3.container .content .card-box .card {
+    width: 100%;
+  }
+
+  #sec3.container .content .card-box .card h3 {
+    font-size: 1.3rem;
+  }
+
+  #sec3.container .content .card-box .card p {
+    font-size: 1rem;
+  }
+
+  #sec3.container .bg-right {
+    top: 55%;
+    transform: translateY(-55%);
+    width: 20%;
+  }
+
+  #sec3.container .bg-left {
+    width: 40%;
+  }
+
+  /* ======================= SECTION 4 ======================= */
+  #sec4.container {
+    flex-flow: column;
+  }
+
+  #sec4.container .left,
+  #sec4.container .right,
+  #sec4.container .left p.desc {
+    width: 100%;
+  }
+
+  #sec4.container .left {
+    margin-bottom: 48px;
+  }
+
+  #sec4.container .left h2.title {
+    margin-bottom: 20px;
+  }
+
+  #sec4.container .right .button {
+    width: 100%;
+  }
+
+  /* ======================= SECTION 5 ======================= */
+  #sec5.container {
+    padding-bottom: 150px;
+  }
+
+  #sec5.container .content p.desc {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  #sec5.container .content .share-container {
+    flex-wrap: wrap;
+    width: 75%;
+  }
+
+  #sec5.container .content .share-container .share {
+    margin-bottom: 53px;
+    width: 35%;
+  }
+
+  #sec5.container .content .share-container .share:hover {
+    width: 35%;
+  }
+
+  #sec5.container .content .share-container .share img {
+    margin: auto;
+  }
+
+  #sec5.container .content .share-container .share span {
+    display: none;
+  }
+
+  #sec5.container .bg {
+    width: 65%;
   }
 }
