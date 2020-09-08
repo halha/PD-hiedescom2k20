@@ -134,6 +134,7 @@ p.desc {
 
 #sec1.container .top .left .search-box input {
   border: none;
+  background: none;
   font-size: 1rem;
   outline: none;
   width: 90%;
@@ -192,6 +193,7 @@ p.desc {
 /* ====================================== SECTION 2 ====================================== */
 #sec2.container {
   text-align: center;
+  padding-bottom: 280px;
 }
 
 /* ============================== S2 CONTENT ============================== */
@@ -240,7 +242,7 @@ p.desc {
 
 /* ============================ S2  BACKGROUND ============================ */
 #sec2.container .bg-img-box {
-  bottom: 10%;
+  bottom: 5%;
   left: 0;
   position: absolute;
   width: 18%;
@@ -295,7 +297,6 @@ p.desc {
 #sec3.container .content .card-box .card .img-box:hover {
   box-shadow: none;
 }
-
 
 #sec3.container .content .card-box .card .img-box img {
   height: 100%;
@@ -462,7 +463,6 @@ p.desc {
 /* ===================================== RESPONSIVE ===================================== */
 /* ================================= TABLET ================================= */
 @media screen and (max-width: 768px) {
-
   /* ======================= UNIVERSAL ======================= */
   .container,
   #sec4.container {
@@ -487,10 +487,6 @@ p.desc {
   }
 
   /* ======================= SECTION 2 ======================= */
-  #sec2.container {
-    padding-bottom: 250px;
-  }
-
   #sec2.container .content .data-box .data h3.counter {
     font-size: 2.8rem;
   }
@@ -509,6 +505,10 @@ p.desc {
   }
 
   /* ======================= SECTION 3 ======================= */
+  #sec3.container {
+    padding: 80px 0 50px;
+  }
+
   #sec3.container .content .card-box {
     box-sizing: border-box;
     flex-wrap: nowrap;
@@ -565,7 +565,6 @@ p.desc {
 
 /* ================================= MOBILE ================================= */
 @media screen and (max-width: 426px) {
-
   /* ======================= UNIVERSAL ======================= */
   .container,
   #sec4.container {
@@ -624,6 +623,11 @@ p.desc {
   }
 
   /* ======================= SECTION 2 ======================= */
+  #sec2.container {
+    text-align: center;
+    padding-bottom: 250px;
+  }
+
   #sec2.container .content p.desc {
     width: 100%;
   }
