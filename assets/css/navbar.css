@@ -10,11 +10,12 @@
   --grey-40: #9aa6a9;
   --grey-80: #516064;
   --grey-100: #2e3c40;
-  --primary-bg: #ffffff;
+  --primary-bg: #fafafa;
   --primary-color: #ee6a51;
   --red-20: #ffe2e6;
   --red-100: #ee6a51;
   --red-dark: #e44c30;
+  --sand-brown-60: #FFDEA9;
   --secondary-bg: #373737;
   --white: #fff;
   --white-2: #fafafa;
@@ -48,10 +49,10 @@ body::-webkit-scrollbar-thumb {
 nav {
   box-sizing: border-box;
   display: flex;
-  height: 60px;
+  height: 70px;
   justify-content: space-between;
   left: 0;
-  padding: 10px 100px;
+  padding: 15px 100px;
   position: absolute;
   top: 0;
   transition: 0.3s;
@@ -79,7 +80,7 @@ nav .logo {
   align-items: center;
   color: var(--grey-100);
   display: flex;
-  font-size: 2.75rem;
+  font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
   text-transform: capitalize;
@@ -154,7 +155,7 @@ nav ul div li a {
 }
 
 nav ul div li a.active {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 nav ul div li a:hover,
@@ -180,6 +181,7 @@ nav ul .hide {
 /* ===================================== RESPONSIVE ===================================== */
 /* ================================= TABLET ================================= */
 @media screen and (max-width: 768px) {
+
   /* ======================= UNIVERSAL ======================= */
   nav {
     padding: 10px 50px;
@@ -192,7 +194,7 @@ nav ul .hide {
 
   /* ======================= NAV  ITEM ======================= */
   nav ul {
-    background: var(--white);
+    background: var(--sand-brown-60);
     display: block;
     height: 100vh;
     line-height: normal;
@@ -207,7 +209,7 @@ nav ul .hide {
   }
 
   nav ul.primary {
-    background: var(--primary-bg);
+    background: var(--sand-brown-60);
   }
 
   nav ul div {
@@ -215,12 +217,16 @@ nav ul .hide {
     left: 50%;
     position: absolute;
     top: 50%;
-    transform: translate(-55%, -80%);
+    transform: translate(-52.5%, -80%);
     width: 100%;
   }
 
   nav ul div li {
     margin-top: 10vh;
+  }
+
+  nav ul div li a {
+    font-size: 2rem;
   }
 
   nav ul .hide {
@@ -238,6 +244,7 @@ nav ul .hide {
 
 /* ================================= MOBILE ================================= */
 @media screen and (max-width: 426px) {
+
   /* ======================= UNIVERSAL ======================= */
   nav {
     padding: 10px 20px;
@@ -259,5 +266,10 @@ nav ul .hide {
 
   nav .show:after {
     top: 10px;
+  }
+
+  /* ======================= NAV  ITEM ======================= */
+  nav ul div li a {
+    font-size: 2rem;
   }
 }
