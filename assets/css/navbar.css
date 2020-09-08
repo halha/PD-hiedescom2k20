@@ -15,7 +15,7 @@
   --red-20: #ffe2e6;
   --red-100: #ee6a51;
   --red-dark: #e44c30;
-  --sand-brown-60: #FFDEA9;
+  --sand-brown-60: #ffdea9;
   --secondary-bg: #373737;
   --white: #fff;
   --white-2: #fafafa;
@@ -164,7 +164,7 @@ nav ul div li a.active {
 }
 
 nav ul .hide {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 nav ul .hide.black {
@@ -181,7 +181,6 @@ nav ul .hide {
 /* ===================================== RESPONSIVE ===================================== */
 /* ================================= TABLET ================================= */
 @media screen and (max-width: 768px) {
-
   /* ======================= UNIVERSAL ======================= */
   nav {
     padding: 10px 50px;
@@ -244,7 +243,6 @@ nav ul .hide {
 
 /* ================================= MOBILE ================================= */
 @media screen and (max-width: 426px) {
-
   /* ======================= UNIVERSAL ======================= */
   nav {
     padding: 10px 20px;

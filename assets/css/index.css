@@ -236,7 +236,7 @@ p.desc {
 }
 
 #sec2.container .content .data-box .data p {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
@@ -305,7 +305,7 @@ p.desc {
 
 #sec3.container .content .card-box .card h3 {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 25px;
+  font-size: 1.5625rem;
   line-height: 1.1;
   margin-bottom: 8px;
 }
@@ -438,7 +438,7 @@ p.desc {
 #sec5.container .content .share-container .share span {
   color: var(--primary-color);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 #sec5.container .content .share-container .share:hover {
