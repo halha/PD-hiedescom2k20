@@ -1,0 +1,330 @@
+/* ====================================== UNIVERSAL ====================================== */
+.color-light-blue {
+  color: var(--blue-light) !important;
+}
+
+.color-red-20 {
+  color: var(--red-20) !important;
+}
+
+.color-white-2 {
+  color: var(--white-2) !important;
+}
+
+.container {
+  box-sizing: border-box;
+  height: auto;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 80px 100px 50px;
+  position: relative;
+  width: 100%;
+}
+
+.button {
+  align-items: center;
+  background: var(--red-100);
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px rgba(46, 60, 64, 0.4);
+  box-sizing: border-box;
+  padding: 22px 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: var(--red-dark);
+}
+
+h1.title {
+  color: var(--primary-color);
+  font-family: 'Uuntu', sans-serif;
+  font-size: 3.6rem;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+h2.title {
+  color: var(--primary-color);
+  font-family: 'Uuntu', sans-serif;
+  font-size: 2.5rem;
+  margin: auto auto 62px auto;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+  width: 65%;
+}
+
+h2.title::after {
+  content: '';
+  width: 100px;
+  height: 4px;
+  background: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+p.desc {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/* ====================================== SECTION 1 ====================================== */
+/* ============================== S1 CONTENT ============================== */
+#sec1.container .content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#sec1.container .content .city-logo {
+  margin-right: 56px;
+  width: 168px;
+}
+
+#sec1.container .content .city-logo img {
+  width: 100%;
+}
+
+#sec1.container .content .desc * {
+  color: var(--white);
+}
+
+#sec1.container .content .desc p {
+  color: var(--grey-20);
+  line-height: 1.5;
+}
+
+#sec1.container .content .desc p span {
+  color: var(--grey-20);
+  display: block;
+}
+
+/* ============================== S1  ARROOW ============================== */
+#sec1.container .arrow {
+  animation: up-down 2.5s infinite;
+  bottom: 10%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+#sec1.container .arrow img {
+  width: 20px;
+}
+
+/* ============================ S1  BACKGROUND ============================ */
+#sec1.container .bg {
+  height: 100vh;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#sec1.container .bg img {
+  width: 100%;
+}
+
+#sec1.container .bg::after {
+  background: var(--blue-dark-100);
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* ======================= ANIMATION ======================= */
+@keyframes up-down {
+  0% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+/* ====================================== SECTION 2 ====================================== */
+/* ============================== S2 CONTENT ============================== */
+#sec2.container .content > div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#sec2.container .content div .map {
+  height: 245px;
+  margin-right: 70px;
+  position: relative;
+  width: 245px;
+}
+
+#sec2.container .content div .map iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#sec2.container .content div .text {
+  width: 45%;
+}
+
+#sec2.container .content div .text p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+/* ============================ S2  BACKGROUND ============================ */
+#sec2.container .bg {
+  bottom: -10%;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  width: 20%;
+  z-index: -1;
+}
+
+#sec2.container .bg img {
+  pointer-events: none;
+  width: 100%;
+}
+
+/* ====================================== SECTION 3 ====================================== */
+/* ============================== S2 CONTENT ============================== */
+#sec3.container .content {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#sec3.container .content .slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#sec3.container .content .slide img {
+  pointer-events: none;
+  width: 100%;
+}
+
+#sec3.container .content .slide .location {
+  position: absolute;
+  bottom: 8%;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+#sec3.container .content .slide .location .map {
+  height: 80px;
+  position: relative;
+  width: 80px;
+  margin-right: 15px;
+}
+
+#sec3.container .content .slide .location .map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#sec3.container .content .slide .location h3 {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 2.25rem;
+  width: 40%;
+  text-align: center;
+}
+
+/* ============================= S2 THUMBNAIL ============================= */
+#sec3.container .thumbnail {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  display: flex;
+}
+
+#sec3.container .thumbnail a {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  margin-left: 22px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px rgba(46, 60, 64, 0.4);
+}
+
+#sec3.container .thumbnail a img {
+  height: 100%;
+  pointer-events: none;
+}
+
+/* ===================================== RESPONSIVE ===================================== */
+/* ================================= TABLET ================================= */
+@media screen and (max-width: 768px) {
+  /* ======================= UNIVERSAL ======================= */
+  .container {
+    padding: 80px 50px 50px;
+  }
+
+  h1.title {
+    font-size: 3.2rem;
+  }
+
+  h2.title {
+    width: 75%;
+  }
+}
+
+/* ================================= MOBILE ================================= */
+@media screen and (max-width: 426px) {
+  /* ======================= UNIVERSAL ======================= */
+  .container {
+    padding: 80px 35px 50px;
+  }
+
+  .button {
+    font-size: 0.875rem;
+    padding: 14px 30px;
+  }
+
+  h1.title {
+    font-size: 2.25rem;
+  }
+
+  h2.title {
+    font-size: 1.5rem;
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  p.desc {
+    font-size: 1.125rem;
+  }
+}

@@ -7,6 +7,7 @@
   --blue-dark-100: #252946;
   --blue-dark-80: #525872;
   --card-bg: #fffcfc;
+  --grey-20: #c0c8ca;
   --grey-40: #9aa6a9;
   --grey-80: #516064;
   --grey-100: #2e3c40;
@@ -47,6 +48,7 @@ body::-webkit-scrollbar-thumb {
 /* ===================================== NAVIGATION ===================================== */
 /* ================================ UNIVERSAL ================================ */
 nav {
+  background: var(--white);
   box-sizing: border-box;
   display: flex;
   height: 70px;
