@@ -24,12 +24,18 @@
 .button {
   align-items: center;
   background: var(--red-100);
-  border-radius: 10px;
-  box-shadow: 0px 0px 30px rgba(46, 60, 64, 0.4);
+  border-radius: 4px;
+  color: var(--white);
+  display: block;
   box-sizing: border-box;
-  padding: 22px 30px;
+  font-weight: 800;
+  letter-spacing: 0.18rem;
+  padding: 9px 30px;
+  text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   transition: 0.3s;
+  width: 100%;
 }
 
 .button:hover {
@@ -57,14 +63,14 @@ h2.title {
 }
 
 h2.title::after {
-  content: '';
-  width: 100px;
-  height: 4px;
   background: var(--primary-color);
-  position: absolute;
   bottom: 0;
+  content: '';
+  height: 4px;
   left: 50%;
+  position: absolute;
   transform: translateX(-50%);
+  width: 100px;
 }
 
 p.desc {
@@ -164,7 +170,7 @@ p.desc {
 
 /* ====================================== SECTION 2 ====================================== */
 /* ============================== S2 CONTENT ============================== */
-#sec2.container .content>div {
+#sec2.container .content > div {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -212,19 +218,19 @@ p.desc {
 /* ====================================== SECTION 3 ====================================== */
 /* ============================== S3 CONTENT ============================== */
 #sec3.container .content {
+  display: inline-block;
   height: 100vh;
-  position: absolute;
-  top: 0;
   left: 0;
   overflow: hidden;
-  display:  -block;
+  position: absolute;
+  top: 0;
 }
 
 #sec3.container .content .slide {
-  position: relative;
-  width: 100%;
   height: 100%;
   overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 #sec3.container .content .slide img {
@@ -233,52 +239,57 @@ p.desc {
 }
 
 #sec3.container .content .slide .location {
-  position: absolute;
-  bottom: 8%;
-  right: 0;
-  display: flex;
   align-items: center;
+  bottom: 8%;
+  display: flex;
+  position: absolute;
+  right: 0;
 }
 
 #sec3.container .content .slide .location .map {
   height: 80px;
+  margin-right: 15px;
   position: relative;
   width: 80px;
-  margin-right: 15px;
 }
 
 #sec3.container .content .slide .location .map iframe {
+  height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
 }
 
 #sec3.container .content .slide .location h3 {
   color: var(--white);
-  font-weight: 600;
   font-size: 2.25rem;
-  width: 40%;
+  font-weight: 600;
   text-align: center;
+  width: 40%;
 }
 
 /* ============================= S3 THUMBNAIL ============================= */
 #sec3.container .thumbnail {
-  position: absolute;
   bottom: 10%;
-  left: 5%;
   display: flex;
+  left: 5%;
+  position: absolute;
 }
 
 #sec3.container .thumbnail a {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  overflow: hidden;
-  margin-left: 22px;
   border-radius: 10px;
   box-shadow: 0px 0px 30px rgba(46, 60, 64, 0.4);
+  display: inline-block;
+  height: 80px;
+  margin-left: 22px;
+  overflow: hidden;
+  width: 80px;
+  transition: 0.3s;
+}
+
+#sec3.container .thumbnail a:hover {
+  transform: translateY(-10px);
 }
 
 #sec3.container .thumbnail a img {
@@ -286,10 +297,186 @@ p.desc {
   pointer-events: none;
 }
 
+/* ====================================== SECTION 4 ====================================== */
+#sec4.container {
+  padding-bottom: 250px;
+}
+
+/* ============================== S4 CONTENT ============================== */
+
+#sec4.container .content .card-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  width: 75%;
+}
+
+#sec4.container .content .card-box .card {
+  display: block;
+  box-sizing: border-box;
+  height: 500px;
+  overflow: hidden;
+  padding: 26px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.4s;
+  width: 30%;
+}
+
+#sec4.container .content .card-box .card:hover {
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+#sec4.container .content .card-box .card .img-box {
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgba(46, 60, 64, 0.4);
+  height: 350px;
+  margin: auto;
+  margin-bottom: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.4s;
+  width: 100%;
+}
+
+#sec4.container .content .card-box .card:hover .img-box {
+  height: 150px;
+}
+
+#sec4.container .content .card-box .card .img-box img {
+  height: 100%;
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+#sec4.container .content .card-box .card h3 {
+  font-size: 1.875rem;
+  margin-bottom: 12px;
+}
+
+#sec4.container .content .card-box .card > p {
+  color: var(--grey-80);
+  font-size: 1.5rem;
+  margin-bottom: 28px;
+}
+
+#sec4.container .content .card-box .card .detail p:first-child {
+  color: var(--grey-60);
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* ============================ S4  BACKGROUND ============================ */
+#sec4 .bg {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 15%;
+  z-index: -1;
+}
+
+#sec4 .bg img {
+  pointer-events: none;
+  width: 100%;
+}
+
+/* ====================================== SECTION 5 ====================================== */
+#sec5.container {
+  padding-top: 0;
+}
+
+/* ============================== S5 CONTENT ============================== */
+#sec5.container .content .card-box {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+}
+
+#sec5.container .content .card-box .card {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0px 0px 30px rgba(46, 60, 64, 0.4);
+  overflow: hidden;
+  transition: 0.3s;
+  width: 30%;
+}
+
+#sec5.container .content .card-box .card:hover {
+  transform: translateY(-20px);
+}
+
+#sec5.container .content .card-box .card .img-box {
+  height: 280px;
+  margin-bottom: 8px;
+  position: relative;
+  width: 100%;
+}
+
+#sec5.container .content .card-box .card .img-box img {
+  height: 100%;
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+#sec5.container .content .card-box .card .detail h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 11px;
+}
+
+#sec5.container .content .card-box .card .detail p {
+  color: var(--grey-60);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 23px;
+}
+
+#sec5.container .content .card-box .card .detail .bot {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#sec5.container .content .card-box .card .detail .bot h4 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+}
+
+#sec5.container .content .card-box .card .bot a {
+  width: auto;
+}
+
+#sec5.container .content .card-box .card .detail {
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+/* ============================ S5  BACKGROUND ============================ */
+#sec5.container .bg {
+  bottom: -5%;
+  position: absolute;
+  right: 0;
+  width: 40%;
+  z-index: -1;
+}
+
+#sec5.container .bg img {
+  width: 100%;
+}
+
 /* ===================================== RESPONSIVE ===================================== */
 /* ================================= TABLET ================================= */
 @media screen and (max-width: 768px) {
-
   /* ======================= UNIVERSAL ======================= */
   .container {
     padding: 80px 50px 50px;
@@ -306,7 +493,6 @@ p.desc {
 
 /* ================================= MOBILE ================================= */
 @media screen and (max-width: 426px) {
-
   /* ======================= UNIVERSAL ======================= */
   .container {
     padding: 80px 35px 50px;
