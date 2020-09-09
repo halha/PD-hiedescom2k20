@@ -235,6 +235,11 @@ p.desc {
   margin-bottom: 35px;
 }
 
+
+#sec2.container .content .data-box .data h3.counter span {
+  color: var(--primary-color);
+}
+
 #sec2.container .content .data-box .data p {
   font-size: 1.25rem;
   font-weight: 600;
@@ -463,6 +468,7 @@ p.desc {
 /* ===================================== RESPONSIVE ===================================== */
 /* ================================= TABLET ================================= */
 @media screen and (max-width: 768px) {
+
   /* ======================= UNIVERSAL ======================= */
   .container,
   #sec4.container {
@@ -565,6 +571,7 @@ p.desc {
 
 /* ================================= MOBILE ================================= */
 @media screen and (max-width: 426px) {
+
   /* ======================= UNIVERSAL ======================= */
   .container,
   #sec4.container {
