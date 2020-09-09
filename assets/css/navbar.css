@@ -48,7 +48,7 @@ body::-webkit-scrollbar-thumb {
 /* ===================================== NAVIGATION ===================================== */
 /* ================================ UNIVERSAL ================================ */
 nav {
-  background: var(--white);
+  background: var(--primary-bg);
   box-sizing: border-box;
   display: flex;
   height: 70px;
@@ -183,6 +183,7 @@ nav ul .hide {
 /* ===================================== RESPONSIVE ===================================== */
 /* ================================= TABLET ================================= */
 @media screen and (max-width: 768px) {
+
   /* ======================= UNIVERSAL ======================= */
   nav {
     padding: 10px 50px;
@@ -245,6 +246,7 @@ nav ul .hide {
 
 /* ================================= MOBILE ================================= */
 @media screen and (max-width: 426px) {
+
   /* ======================= UNIVERSAL ======================= */
   nav {
     padding: 10px 20px;
