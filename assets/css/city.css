@@ -216,52 +216,78 @@ p.desc {
 }
 
 /* ====================================== SECTION 3 ====================================== */
-/* ============================== S3 CONTENT ============================== */
-#sec3.container .content {
-  display: inline-block;
+#sec3.container {
   height: 100vh;
-  left: 0;
   overflow: hidden;
-  position: absolute;
-  top: 0;
+  padding: 0;
+  width: 100%;
 }
 
-#sec3.container .content .slide {
-  height: 100%;
-  overflow: hidden;
+#sec3.container .slides {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+  /* width: 10px;
+  height: 10px; */
+  display: none;
+}
+
+/* .slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+} */
+
+#sec3.container .slides > div {
   position: relative;
+  scroll-snap-align: start;
+  flex-shrink: 0;
   width: 100%;
-}
-
-#sec3.container .content .slide img {
-  pointer-events: none;
-  width: 100%;
-}
-
-#sec3.container .content .slide .location {
+  height: 100vh;
+  background: silver;
+  position: relative;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  bottom: 8%;
+  font-size: 100px;
+}
+
+#sec3.container .slides div img {
+  height: 100%;
+  pointer-events: none;
+}
+
+#sec3.container .slides div .location {
+  align-items: center;
+  bottom: 5%;
   display: flex;
   position: absolute;
   right: 0;
 }
 
-#sec3.container .content .slide .location .map {
+#sec3.container .slides div .location .map {
   height: 80px;
-  margin-right: 15px;
+  margin-right: 20px;
+  overflow: hidden;
   position: relative;
   width: 80px;
 }
 
-#sec3.container .content .slide .location .map iframe {
-  height: 100%;
+#sec3.container .slides div .location .map iframe {
+  bottom: 0;
   left: 0;
   position: absolute;
-  top: 0;
   width: 100%;
 }
 
-#sec3.container .content .slide .location h3 {
+#sec3.container .slides div .location h3 {
   color: var(--white);
   font-size: 2.25rem;
   font-weight: 600;
@@ -269,37 +295,33 @@ p.desc {
   width: 40%;
 }
 
-/* ============================= S3 THUMBNAIL ============================= */
-#sec3.container .thumbnail {
-  bottom: 10%;
-  display: flex;
+#sec3.container .thumb {
+  bottom: 5%;
   left: 5%;
   position: absolute;
 }
 
-#sec3.container .thumbnail a {
-  border-radius: 10px;
-  box-shadow: 0px 0px 30px rgba(46, 60, 64, 0.4);
-  display: inline-block;
+#sec3.container .thumb > a {
+  align-items: center;
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: inline-flex;
   height: 80px;
-  margin-left: 22px;
+  justify-content: center;
+  margin-right: 10px;
   overflow: hidden;
+  position: relative;
   width: 80px;
-  transition: 0.3s;
 }
 
-#sec3.container .thumbnail a:hover {
-  transform: translateY(-10px);
+#sec3.container .thumb > a:hover {
+  border: 5px solid white;
+  top: 1px;
 }
 
-#sec3.container .thumbnail a img {
+#sec3.container .thumb a img {
   height: 100%;
   pointer-events: none;
-}
-
-/* ====================================== SECTION 4 ====================================== */
-#sec4.container {
-  padding-bottom: 250px;
 }
 
 /* ============================== S4 CONTENT ============================== */
