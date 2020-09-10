@@ -55,9 +55,10 @@ $(document).ready(() => {
       if (scroll > breakSec) {
         $(this).removeClass("hidden");
         $(this).addClass("play");
-      } else if (scroll > breakSec - 2000) {
-        $(this).addClass("hidden");
-        $(this).removeClass("play");
+        // Repeat
+        // } else if (scroll > breakSec - 2000) {
+        //   $(this).addClass("hidden");
+        //   $(this).removeClass("play");
       }
     });
   });
