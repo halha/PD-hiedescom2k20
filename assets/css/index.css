@@ -157,6 +157,7 @@ p.desc {
 #sec1.container .top .right .img-box img {
   pointer-events: none;
   width: 90%;
+  margin-top: 40px;
 }
 
 /* ============================== S1 BOTTOM ============================== */
@@ -217,12 +218,12 @@ p.desc {
 #sec2.container .content .data-box .data::after {
   background: var(--grey-40);
   content: '';
-  height: 100px;
+  height: 80px;
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 2px;
+  width: 1.75px;
 }
 
 #sec2.container .content .data-box .data:last-child::after {
