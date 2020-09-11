@@ -10,6 +10,7 @@
   <!-- ================================= CSS ================================= -->
   <link rel="stylesheet" href="assets/css/navbar.css" />
   <link rel="stylesheet" href="assets/css/city.css" />
+  <link rel="stylesheet" href="assets/css/scrollAnimation.css" />
   <link rel="stylesheet" href="assets/css/footer.css" />
 </head>
 
@@ -32,7 +33,7 @@
           <a class="active">Destinasi</a>
         </li>
         <li>
-          <a href="#">Belanja</a>
+          <a href="./index.html#sec3">Belanja</a>
         </li>
         <li>
           <a href="#">Tentang</a>
@@ -45,10 +46,10 @@
   <!-- ============================== SECTION 1 ============================== -->
   <section id="sec1" class="container">
     <div class="content">
-      <div class="city-logo">
+      <div class="city-logo play fadeIn">
         <img src="assets/img/City/Malang/logo_malang.png" alt="logo_malang" />
       </div>
-      <div class="desc">
+      <div class="desc play fadeInRight delay2">
         <h1 class="title">Malang</h1>
         <p>
           Ma.lang
@@ -58,26 +59,26 @@
     </div>
 
     <a href="#sec2" class="arrow">
-      <img src="assets/img/icon/ic_arrow-white.svg" alt="ic_arrow-white" />
+      <img class="play delay4 fadeInUp" src="assets/img/icon/ic_arrow-white.svg" alt="ic_arrow-white" />
     </a>
 
     <div class="bg">
-      <img src="assets/img/City/Malang/pic_malang-min.jpg" alt="pic_malang-min" />
+      <!-- <img src="assets/img/City/Malang/pic_malang-min.jpg" alt="pic_malang-min" /> -->
     </div>
   </section>
 
   <!-- ============================== SECTION 2 ============================== -->
   <section id="sec2" class="container">
     <div class="content">
-      <h2 class="title">Deskripsi Singkat</h2>
+      <h2 class="title onScroll fadeInLeft hidden">Deskripsi Singkat</h2>
       <div>
-        <div class="map">
+        <div class="map onScroll fadeIn hidden">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126438.28548093722!2d112.56174250069675!3d-7.97863946531398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62822063dc2fb%3A0x78879446481a4da2!2sMalang%2C%20Malang%20City%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1599623011317!5m2!1sen!2sid"
             width="400" height="300" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
             tabindex="0"></iframe>
         </div>
-        <div class="text">
+        <div class="text onScroll fadeInRight delay2 hidden">
           <p>
             Kota Malang dikenal sebagai kota pendidikan karena jota ini memiliki berbagai perguruan tinggi
             terbaik seperti Universitas Brawijaya, Universitas Negeri Malang, dan Politeknik Negeri Malang.
@@ -144,23 +145,24 @@
     </div>
 
     <div class="thumb">
-      <a href="#slide-1">
+      <a href="#slide-1" class="onScroll fadeIn hidden">
         <img src="assets/img/City/Malang/malang_1_18x9-min.jpg" alt="malang_dummy_1-min" />
       </a>
-      <a href="#slide-2">
+      <a href="#slide-2" class="onScroll fadeIn delay1 hidden">
         <img src="assets/img/City/Malang/malang_2_18x9-min.jpg" alt="malang_dummy_2-min" />
       </a>
-      <a href="#slide-3"><img src="assets/img/City/Malang/malang_3_18x9-min.jpg" alt="malang_dummy_3-min" /></a>
+      <a href="#slide-3" class="onScroll fadeIn delay2 hidden">
+        <img src="assets/img/City/Malang/malang_3_18x9-min.jpg" alt="malang_dummy_3-min" /></a>
     </div>
   </section>
 
   <!-- ============================== SECTION 4 ============================== -->
   <section id="sec4" class="container">
     <div class="content">
-      <h2 class="title">Tempat menarik di Malang</h2>
+      <h2 class="title onScroll fadeInRight hidden">Tempat menarik di Malang</h2>
 
       <div class="card-box">
-        <a href="#" class="card">
+        <a href="#" class="card onScroll flip delay1 hidden">
           <div class="img-box">
             <img src="assets/img/City/Malang/malang_1_4x3-min.jpg" alt="Malang Night Paradise" />
           </div>
@@ -176,7 +178,7 @@
           </div>
         </a>
 
-        <a href="#" class="card">
+        <a href="#" class="card onScroll flip delay2 hidden">
           <div class="img-box">
             <img src="assets/img/City/Malang/malang_2_4x3-min.jpg" alt="Pantai Wedi Klopo" />
           </div>
@@ -192,7 +194,7 @@
           </div>
         </a>
 
-        <a href="#" class="card">
+        <a href="#" class="card onScroll flip delay3 hidden">
           <div class="img-box">
             <img src="assets/img/City/Malang/malang_3_4x3-min.jpg" alt="Kampung Biru" />
           </div>
@@ -218,9 +220,9 @@
   <!-- ============================== SECTION 5 ============================== -->
   <section id="sec5" class="container">
     <div class="content">
-      <h2 class="title">Produk lokal khas Malang</h2>
+      <h2 class="title onScroll fadeInLeft hidden">Produk lokal khas Malang</h2>
       <div class="card-box">
-        <div class="card">
+        <div class="card onScroll fadeIn delay1 hidden">
           <div class="img-box">
             <img src="assets/img/City/Malang/bakso-min.jpg" alt="Frozen Bakso" />
           </div>
@@ -238,7 +240,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card onScroll fadeIn delay2 hidden">
           <div class="img-box">
             <img src="assets/img/City/Malang/strudel-min.jpg" alt="strudel" />
           </div>
@@ -256,7 +258,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card onScroll fadeIn delay3 hidden">
           <div class="img-box">
             <img src="assets/img/City/Malang/keramik-min.jpg" alt="Keramik" />
           </div>
