@@ -128,6 +128,7 @@ p.desc {
 
 /* ============================ S1  BACKGROUND ============================ */
 #sec1.container .bg {
+  background-image: url("../img/city/Malang/pic_malang-min.jpg");
   height: 100vh;
   left: 0;
   overflow: hidden;
@@ -138,9 +139,9 @@ p.desc {
   z-index: -1;
 }
 
-#sec1.container .bg img {
+/* #sec1.container .bg img {
   width: 100%;
-}
+} */
 
 #sec1.container .bg::after {
   background: var(--blue-dark-100);
