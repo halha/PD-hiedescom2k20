@@ -298,6 +298,7 @@ p.desc {
   width: 100%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+  position: relative;
 }
 
 #sec3.container .content .card-box .card .img-box:hover {
@@ -305,6 +306,10 @@ p.desc {
 }
 
 #sec3.container .content .card-box .card .img-box img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   height: 100%;
   pointer-events: none;
 }
