@@ -236,7 +236,6 @@ p.desc {
   margin-bottom: 35px;
 }
 
-
 #sec2.container .content .data-box .data h3.counter span {
   color: var(--primary-color);
 }
@@ -474,7 +473,6 @@ p.desc {
 /* ===================================== RESPONSIVE ===================================== */
 /* ================================= TABLET ================================= */
 @media screen and (max-width: 768px) {
-
   /* ======================= UNIVERSAL ======================= */
   .container,
   #sec4.container {
@@ -490,6 +488,15 @@ p.desc {
   }
 
   /* ======================= SECTION 1 ======================= */
+  #sec1.container {
+    min-height: auto;
+  }
+
+  #sec1.container .top {
+    height: auto;
+    margin: 100px 0 50px;
+  }
+
   #sec1.container .top .left {
     padding-left: 50px;
   }
@@ -499,6 +506,10 @@ p.desc {
   }
 
   /* ======================= SECTION 2 ======================= */
+  #sec2.container {
+    min-height: auto;
+  }
+
   #sec2.container .content .data-box .data h3.counter {
     font-size: 2.8rem;
   }
@@ -518,6 +529,7 @@ p.desc {
 
   /* ======================= SECTION 3 ======================= */
   #sec3.container {
+    min-height: auto;
     padding: 80px 0 50px;
   }
 
@@ -535,6 +547,7 @@ p.desc {
   }
 
   #sec3.container .content .card-box .card {
+    flex-shrink: 0;
     margin-right: 30px;
     width: 40%;
   }
@@ -557,6 +570,10 @@ p.desc {
   }
 
   /* ======================= SECTION 5 ======================= */
+  #sec5.container {
+    min-height: 50vh;
+  }
+
   #sec5.container .content .share-container .share {
     width: 35%;
   }
@@ -570,14 +587,13 @@ p.desc {
   }
 
   #sec5.container .bg {
-    width: 65%;
+    width: 37%;
     bottom: -5%;
   }
 }
 
 /* ================================= MOBILE ================================= */
 @media screen and (max-width: 426px) {
-
   /* ======================= UNIVERSAL ======================= */
   .container,
   #sec4.container {
@@ -611,6 +627,8 @@ p.desc {
     margin-bottom: 30px;
     padding-top: 80px;
     text-align: center;
+    min-height: 90vh;
+    margin: 0;
   }
 
   #sec1.container .top .left,
@@ -632,7 +650,7 @@ p.desc {
   }
 
   #sec1.container .top .right .img-box {
-    width: 90%;
+    width: 80%;
   }
 
   /* ======================= SECTION 2 ======================= */
