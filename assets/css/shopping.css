@@ -131,9 +131,52 @@ p.desc {
   width: 100%;
 }
 
-/* ====================================== SECTION 1 ====================================== */
+/* ====================================== SECTION 2 ====================================== */
 #sec2.container {
   padding-bottom: 0;
+}
+
+/* ============================ S2  BACKGROUND ============================ */
+#sec2.container .bg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15%;
+  z-index: -1;
+}
+
+#sec2.container .bg img {
+  width: 100%;
+  pointer-events: none;
+}
+
+/* ====================================== SECTION 3 ====================================== */
+#sec3.container {
+  padding-bottom: 200px;
+}
+
+/* ============================ S3  BACKGROUND ============================ */
+#sec3.container .bg {
+  position: absolute;
+  z-index: -1;
+}
+
+#sec3.container .bg.bg-1 {
+  width: 20%;
+  left: 0;
+  top: 15%;
+}
+
+#sec3.container .bg.bg-2 {
+  width: 40%;
+  right: 0;
+  bottom: -5%;
+}
+
+#sec3.container .bg img {
+  width: 100%;
+  pointer-events: none;
 }
 
 /* ==================================== SECTION 2 & 3 ==================================== */
@@ -252,5 +295,9 @@ p.desc {
 
   p.desc {
     font-size: 1.125rem;
+  }
+
+  #sec5.container .bg.bg-2 {
+    width: 70%;
   }
 }
