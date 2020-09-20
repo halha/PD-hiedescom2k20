@@ -122,7 +122,7 @@ p.desc {
 #sec1.container .arrow {
   animation: up-down 2.5s infinite;
   bottom: 10%;
-  left: 50%;
+  left: 48%;
   position: absolute;
   transform: translateX(-50%);
 }
@@ -144,10 +144,6 @@ p.desc {
   width: 100%;
   z-index: -1;
 }
-
-/* #sec1.container .bg img {
-  width: 100%;
-} */
 
 #sec1.container .bg1::after {
   background: var(--blue-dark-100);
@@ -525,6 +521,19 @@ p.desc {
     width: 25%;
   }
 
+  /* ======================= SECTION 3 ======================= */
+  #sec3.container .slides > div {
+    width: auto;
+  }
+
+  #sec3.container .slides div .location {
+    display: none;
+  }
+
+  #sec3.container .thumb > a:first-child {
+    display: none;
+  }
+
   /* ======================= SECTION 4 ======================= */
   #sec4.container {
     padding: 80px 0 200px;
@@ -551,6 +560,10 @@ p.desc {
     width: 40%;
   }
 
+  #sec4.container .content .card-box .card:nth-child(3) {
+    margin-right: 0;
+  }
+
   #sec4.container .content .card-box .card:hover .img-box {
     height: 300px;
   }
@@ -569,7 +582,7 @@ p.desc {
 
   /* ======================= SECTION 5 ======================= */
   #sec5.container {
-    padding: 80px 0 200px;
+    padding: 20px 0 200px;
     min-height: auto;
   }
 
@@ -582,6 +595,10 @@ p.desc {
     width: 100%;
   }
 
+  #sec5.container .content .card-box::-webkit-scrollbar {
+    display: none;
+  }
+
   #sec5.container .content .card-box .card {
     flex-shrink: 0;
     height: auto;
@@ -589,15 +606,16 @@ p.desc {
     width: 45%;
   }
 
-  #sec5.container .content .card-box::-webkit-scrollbar {
-    display: none;
+  #sec5.container .content .card-box .card:nth-child(3) {
+    margin-right: 0;
   }
 }
 
 /* ================================= MOBILE ================================= */
 @media screen and (max-width: 426px) {
   /* ======================= UNIVERSAL ======================= */
-  .container {
+  .container,
+  #sec2.container {
     padding: 80px 35px 50px;
   }
 
@@ -612,11 +630,66 @@ p.desc {
 
   h2.title {
     font-size: 1.5rem;
+    margin-bottom: 30px;
     padding: 20px 0;
     width: 100%;
   }
 
   p.desc {
     font-size: 1.125rem;
+  }
+
+  /* ======================= SECTION 1 ======================= */
+  #sec1.container .content {
+    flex-flow: column;
+    text-align: center;
+  }
+
+  #sec1.container .content .city-logo {
+    margin-right: 0;
+  }
+
+  /* ======================= SECTION 2 ======================= */
+  #sec2.container .content > div {
+    flex-flow: column;
+  }
+
+  #sec2.container .content div .map {
+    margin: 0 auto 30px;
+  }
+
+  #sec2.container .content div .text {
+    width: 100%;
+  }
+
+  #sec2.container .bg {
+    display: none;
+  }
+
+  /* ======================= SECTION 4 ======================= */
+  #sec4.container .content .card-box,
+  #sec5.container .content .card-box {
+    padding: 0 35px 35px;
+  }
+
+  #sec4.container .content .card-box .card {
+    width: 85%;
+  }
+
+  #sec4 .bg {
+    width: 45%;
+  }
+
+  /* ======================= SECTION 5 ======================= */
+  #sec5.container {
+    padding: 0 0 50px;
+  }
+
+  #sec5.container .content .card-box .card {
+    width: 90%;
+  }
+
+  #sec5.container .bg {
+    width: 70%;
   }
 }
