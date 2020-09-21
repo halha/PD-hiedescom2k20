@@ -7,7 +7,20 @@ $(document).ready(() => {
       if (scroll > breakSec) {
         $(this).removeClass('hidden');
         $(this).addClass('play');
+      }
+    });
+  });
+
+  //CounterScroll
+  var i = 1;
+  $('.onScrollCounter').each(function () {
+    $(window).scroll((e) => {
+      let scroll = $(window).scrollTop() + $(window).height();
+      const breakSec = $(this).offset().top + 100;
+      if (scroll > breakSec && i == 1) {
+        console.log('jalan');
         count();
+        i++;
       }
     });
   });
@@ -22,10 +35,10 @@ function count() {
           Counter: $(this).text(),
         },
         {
-          duration: 4000,
+          duration: 2000,
           easing: 'swing',
           step: function (now) {
-            $(this).text(Math.ceil(now));
+            $(this).text(Math.ceil(now).toLocaleString());
           },
         }
       );
