@@ -1,284 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda | Traveline</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/Logo.svg"
+      sizes="96x96"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Beranda | Traveline</title>
-  <link rel="icon" type="image/png" href="assets/img/Logo.svg" sizes="96x96" />
+    <!-- ================================= CSS ================================= -->
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/scrollAnimation.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+  </head>
 
-  <!-- ================================= CSS ================================= -->
-  <link rel="stylesheet" href="assets/css/navbar.css" />
-  <link rel="stylesheet" href="assets/css/index.css" />
-  <link rel="stylesheet" href="assets/css/scrollAnimation.css" />
-  <link rel="stylesheet" href="assets/css/footer.css" />
-</head>
-
-<body>
-  <!-- =============================== NAVBAR =============================== -->
-  <nav>
-    <a href="index.html" class="logo">
-      <div class="logo-icon">
-        <img src="assets/img/Logo.svg" alt="Traveline" />
-      </div>
-      <span>Traveline</span>
-    </a>
-
-    <div class="show white"></div>
-    <ul class="primary">
-      <div>
-        <li><a class="active">Beranda</a></li>
-        <li>
-          <a href="#sec3">Destinasi</a>
-        </li>
-        <li>
-          <a href="shopping.html">Belanja</a>
-        </li>
-        <li>
-          <a href="about.html">Tentang</a>
-        </li>
-      </div>
-      <span class="hide black">x</span>
-    </ul>
-  </nav>
-  </nav>
-
-  <!-- ============================== SECTION 1 ============================== -->
-  <section id="sec1" class="container">
-    <div class="top">
-      <div class="left">
-        <h1 class="title play fadeInLeft">Lihat Pesona Negeri Dari Rumah</h1>
-        <p class="desc play delay2 fadeIn">
-          Meskipun terjadi pandemi, kamu tidak perlu takut jalan jalan karena
-          kamu bisa Travelling <span>#DiRumahAja</span>
-        </p>
-        <div class="search-box play delay2 fadeIn">
-          <div class="search-icon">
-            <img src="assets/img/icon/ic_search0.svg" />
-          </div>
-          <input type="text" name="search" id="search" placeholder="Cari tempat, kota, atau wisata.." />
-        </div>
-      </div>
-      <div class="right">
-        <div class="img-box">
-          <img src="assets/img/illustration/illu_Index_main.svg" alt="illu_Index_main" />
-        </div>
-      </div>
-    </div>
-    <div class="bottom">
-      <a href="#sec2">
-        <div class="arrow-box play delay4 fadeInUp">
-          <img src="assets/img/icon/ic_arrow.svg" alt="ic_arrow" />
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <!-- ============================== SECTION 2 ============================== -->
-  <section id="sec2" class="container">
-    <div class="content">
-      <h2 class="title onScroll fadeInLeft hidden">Apa itu Traveline?</h2>
-      <p class="desc onScroll fadeUp hidden delay1">
-        Traveline adalah sebuah web yang memberikan solusi untuk melakukan
-        jalan jalan dan belanja produk lokal secara daring tanpa perlu keluar
-        rumah.
-      </p>
-      <div class="data-box">
-        <div class="data">
-          <h3 class="counter"><span class="onScrollCounter count">5</span>+</h3>
-          <p>Kota tujuan</p>
-        </div>
-        <div class="data">
-          <h3 class="counter"><span class="onScrollCounter count">10</span>+</h3>
-          <p>foto indah</p>
-        </div>
-        <div class="data">
-          <h3 class="counter"><span class="onScrollCounter count">15</span>+</h3>
-          <p>produk lokal</p>
-        </div>
-        <div class="data">
-          <h3 class="counter"><span class="onScrollCounter count">100</span>+</h3>
-          <p>senyum bahagia</p>
-        </div>
-      </div>
-    </div>
-    <div class="bg-img-box">
-      <img src="assets/img/illustration/illu_tree_left.svg" alt="illu_tree_left" />
-    </div>
-  </section>
-
-  <!-- ============================== SECTION 3 ============================== -->
-  <section id="sec3" class="container">
-    <div class="content">
-      <h2 class="title onScroll fadeInRight hidden">Pilih kota tujuanmu!</h2>
-      <div class="card-box">
-        <a href="destination/surabaya.html" class="card onScroll flip hidden">
-          <div class="img-box">
-            <img src="assets/img/city/Surabaya/pic_surabaya-min.jpg" alt="Surabaya" />
-          </div>
-          <h3>Surabaya</h3>
-          <p>Jawa Timur</p>
-        </a>
-
-        <a href="destination/malang.html" class="card onScroll flip hidden delay1">
-          <div class="img-box">
-            <img src="assets/img/city/Malang/pic_malang-min.jpg" alt="Malang" />
-          </div>
-          <h3>Malang</h3>
-          <p>Jawa Timur</p>
-        </a>
-
-        <a href="#" class="card onScroll flip hidden delay2">
-          <div class="img-box">
-            <img src="assets/img/city/Yogyakarta/pic_yogyakarta-min.jpg" alt="Kota Yogyakarta" />
-          </div>
-          <h3>Kota Yogyakarta</h3>
-          <p>DI Yogyakarta</p>
-        </a>
-
-        <a href="#" class="card onScroll flip hidden">
-          <div class="img-box">
-            <img src="assets/img/city/Jakarta Utara/pic_jakarta-min.jpg" alt="Jakarta Utara" />
-          </div>
-          <h3>Jakarta Utara</h3>
-          <p>Jakarta</p>
-        </a>
-
-        <a href="#" class="card onScroll flip hidden delay1">
-          <div class="img-box">
-            <img src="assets/img/city/Denpasar/pic_denpasar-min.jpg" alt="Denpasar" />
-          </div>
-          <h3>Denpasar</h3>
-          <p>Bali</p>
-        </a>
-
-        <a href="#" class="card onScroll flip hidden delay2">
-          <div class="img-box">
-            <img src="assets/img/city/Denpasar/pic_denpasar-min.jpg" alt="Surabaya" />
-          </div>
-          <h3>Surabaya</h3>
-          <p>Jawa Timur</p>
-        </a>
-
-        <span>/ dummy tag /</span>
-      </div>
-    </div>
-    <div class="bg-right">
-      <img src="assets/img/illustration/illu_index_right.svg" alt="illu_index_right" />
-    </div>
-    <div class="bg-left">
-      <img src="assets/img/illustration/illu_index_left.svg" alt="illu_index_left" />
-    </div>
-  </section>
-
-  <!-- ============================== SECTION 4 ============================== -->
-  <section id="sec4" class="container">
-    <div class="left">
-      <h2 class="title color-white-2 onScroll fadeInLeft hidden">
-        Nikmati produk lokal di Indonesia
-      </h2>
-      <p class="desc color-light-blue onScroll fadeIn hidden">
-        Kami menyediakan berbagai macam pilihan produk olahan UMKM di berbagai
-        wilayah dari seluruh Indonesia yang tersedia untuk dipesan
-      </p>
-    </div>
-    <div class="right">
-      <a href="./shopping.html" class="button onScroll fadeInRight hidden delay1">
-        <span class="color-red-20">Lihat produk yang tersedia</span>
-        <img src="assets/img/icon/ic_arrow-button.svg" alt="ic_arrow-button" />
-      </a>
-    </div>
-  </section>
-
-  <!-- ============================== SECTION 5 ============================== -->
-  <section id="sec5" class="container">
-    <div class="content">
-      <h2 class="title onScroll fadeInLeft hidden">Berbagi itu indah.</h2>
-      <p class="desc onScroll fadeInUp hidden delay1">
-        Bagikan ke teman, kerabat, atau saudaramu agar dapat melihat pesona
-        Indonesia bersama - sama!
-      </p>
-      <div class="share-container">
-        <a href="#" class="share onScroll fadeIn hidden delay1">
-          <img src="assets/img/icon/ic_instagram-sketched.svg" alt="Instagram" />
-          <span>Instagram</span>
-        </a>
-
-        <a href="#" class="share onScroll fadeIn hidden delay2">
-          <img src="assets/img/icon/ic_facebook.svg" alt="Facebook" />
-          <span>Facebook</span>
-        </a>
-
-        <a href="#" class="share onScroll fadeIn hidden delay3">
-          <img src="assets/img/icon/ic_telegram.svg" alt="Telegram" />
-          <span>Telegram</span>
-        </a>
-
-        <a href="#" class="share onScroll fadeIn hidden delay4">
-          <img src="assets/img/icon/ic_whatsapp.svg" alt="Whatsapp" />
-          <span>Whatsapp</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="bg">
-      <img src="assets/img/illustration/illu_footer_above.svg" alt="illu_footer_above" />
-    </div>
-  </section>
-
-  <!-- =============================== FOOTER =============================== -->
-  <footer>
-    <div class="top">
-      <div class="left">
-        <a href="index.html" class="logo">
+  <body>
+    <!-- =============================== NAVBAR =============================== -->
+    <nav>
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
           <img src="assets/img/Logo.svg" alt="Traveline" />
-          <h3>Traveline</h3>
+        </div>
+        <span>Traveline</span>
+      </a>
+
+      <div class="show white"></div>
+      <ul class="primary">
+        <div>
+          <li><a class="active">Beranda</a></li>
+          <li>
+            <a href="#sec3">Destinasi</a>
+          </li>
+          <li>
+            <a href="shopping.html">Belanja</a>
+          </li>
+          <li>
+            <a href="about.html">Tentang</a>
+          </li>
+        </div>
+        <span class="hide black">x</span>
+      </ul>
+    </nav>
+
+    <!-- ============================== SECTION 1 ============================== -->
+    <section id="sec1" class="container">
+      <div class="top">
+        <div class="left">
+          <h1 class="title play fadeInLeft">Lihat Pesona Negeri Dari Rumah</h1>
+          <p class="desc play delay2 fadeIn">
+            Meskipun terjadi pandemi, kamu tidak perlu takut jalan jalan karena
+            kamu bisa Travelling <span>#DiRumahAja</span>
+          </p>
+          <div class="search-box play delay2 fadeIn">
+            <div class="search-icon">
+              <img src="assets/img/icon/ic_search0.svg" />
+            </div>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Cari tempat, kota, atau wisata.."
+            />
+          </div>
+        </div>
+        <div class="right">
+          <div class="img-box">
+            <img
+              src="assets/img/illustration/illu_Index_main.svg"
+              alt="illu_Index_main"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <a href="#sec2">
+          <div class="arrow-box play delay4 fadeInUp">
+            <img src="assets/img/icon/ic_arrow.svg" alt="ic_arrow" />
+          </div>
         </a>
-        <p>
-          Jelajahi nusantara dan rasakah produk juga jajanan lokal dari rumah
-          saja
+      </div>
+    </section>
+
+    <!-- ============================== SECTION 2 ============================== -->
+    <section id="sec2" class="container">
+      <div class="content">
+        <h2 class="title onScroll fadeInLeft hidden">Apa itu Traveline?</h2>
+        <p class="desc onScroll fadeUp hidden delay1">
+          Traveline adalah sebuah web yang memberikan solusi untuk melakukan
+          jalan jalan dan belanja produk lokal secara daring tanpa perlu keluar
+          rumah.
+        </p>
+        <div class="data-box">
+          <div class="data">
+            <h3 class="counter">
+              <span class="onScrollCounter count">5</span>+
+            </h3>
+            <p>Kota tujuan</p>
+          </div>
+          <div class="data">
+            <h3 class="counter">
+              <span class="onScrollCounter count">10</span>+
+            </h3>
+            <p>foto indah</p>
+          </div>
+          <div class="data">
+            <h3 class="counter">
+              <span class="onScrollCounter count">15</span>+
+            </h3>
+            <p>produk lokal</p>
+          </div>
+          <div class="data">
+            <h3 class="counter">
+              <span class="onScrollCounter count">100</span>+
+            </h3>
+            <p>senyum bahagia</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-img-box">
+        <img
+          src="assets/img/illustration/illu_tree_left.svg"
+          alt="illu_tree_left"
+        />
+      </div>
+    </section>
+
+    <!-- ============================== SECTION 3 ============================== -->
+    <section id="sec3" class="container">
+      <div class="content">
+        <h2 class="title onScroll fadeInRight hidden">Pilih kota tujuanmu!</h2>
+        <div class="card-box">
+          <a href="destination/surabaya.html" class="card onScroll flip hidden">
+            <div class="img-box">
+              <img
+                src="assets/img/city/Surabaya/pic_surabaya-min.jpg"
+                alt="Surabaya"
+              />
+            </div>
+            <h3>Surabaya</h3>
+            <p>Jawa Timur</p>
+          </a>
+
+          <a
+            href="destination/malang.html"
+            class="card onScroll flip hidden delay1"
+          >
+            <div class="img-box">
+              <img
+                src="assets/img/city/Malang/pic_malang-min.jpg"
+                alt="Malang"
+              />
+            </div>
+            <h3>Malang</h3>
+            <p>Jawa Timur</p>
+          </a>
+
+          <a href="#" class="card onScroll flip hidden delay2">
+            <div class="img-box">
+              <img
+                src="assets/img/city/Yogyakarta/pic_yogyakarta-min.jpg"
+                alt="Kota Yogyakarta"
+              />
+            </div>
+            <h3>Kota Yogyakarta</h3>
+            <p>DI Yogyakarta</p>
+          </a>
+
+          <a href="#" class="card onScroll flip hidden">
+            <div class="img-box">
+              <img
+                src="assets/img/city/Jakarta Utara/pic_jakarta-min.jpg"
+                alt="Jakarta Utara"
+              />
+            </div>
+            <h3>Jakarta Utara</h3>
+            <p>Jakarta</p>
+          </a>
+
+          <a href="#" class="card onScroll flip hidden delay1">
+            <div class="img-box">
+              <img
+                src="assets/img/city/Denpasar/pic_denpasar-min.jpg"
+                alt="Denpasar"
+              />
+            </div>
+            <h3>Denpasar</h3>
+            <p>Bali</p>
+          </a>
+
+          <a href="#" class="card onScroll flip hidden delay2">
+            <div class="img-box">
+              <img
+                src="assets/img/city/Denpasar/pic_denpasar-min.jpg"
+                alt="Surabaya"
+              />
+            </div>
+            <h3>Surabaya</h3>
+            <p>Jawa Timur</p>
+          </a>
+
+          <span>/ dummy tag /</span>
+        </div>
+      </div>
+      <div class="bg-right">
+        <img
+          src="assets/img/illustration/illu_index_right.svg"
+          alt="illu_index_right"
+        />
+      </div>
+      <div class="bg-left">
+        <img
+          src="assets/img/illustration/illu_index_left.svg"
+          alt="illu_index_left"
+        />
+      </div>
+    </section>
+
+    <!-- ============================== SECTION 4 ============================== -->
+    <section id="sec4" class="container">
+      <div class="left">
+        <h2 class="title color-white-2 onScroll fadeInLeft hidden">
+          Nikmati produk lokal di Indonesia
+        </h2>
+        <p class="desc color-light-blue onScroll fadeIn hidden">
+          Kami menyediakan berbagai macam pilihan produk olahan UMKM di berbagai
+          wilayah dari seluruh Indonesia yang tersedia untuk dipesan
         </p>
       </div>
       <div class="right">
-        <div class="column">
-          <h3>Destinasi</h3>
-          <a href="destination/malang.html">Malang</a>
-          <a href="#">Yogyakarta</a>
-          <a href="#">Pasuruan</a>
-          <a href="#">Papua</a>
-          <a href="#" class="see">Lihat Semua</a>
-        </div>
+        <a
+          href="./shopping.html"
+          class="button onScroll fadeInRight hidden delay1"
+        >
+          <span class="color-red-20">Lihat produk yang tersedia</span>
+          <img
+            src="assets/img/icon/ic_arrow-button.svg"
+            alt="ic_arrow-button"
+          />
+        </a>
+      </div>
+    </section>
 
-        <div class="column">
-          <h3>Produk Lokal</h3>
-          <a href="#">Kopi Luwak</a>
-          <a href="#">Tas Koja</a>
-          <a href="#">Kain Songket</a>
-          <a href="#">Egg Roll Waluh</a>
-          <a href="#" class="see">Lihat Semua</a>
-        </div>
+    <!-- ============================== SECTION 5 ============================== -->
+    <section id="sec5" class="container">
+      <div class="content">
+        <h2 class="title onScroll fadeInLeft hidden">Berbagi itu indah.</h2>
+        <p class="desc onScroll fadeInUp hidden delay1">
+          Bagikan ke teman, kerabat, atau saudaramu agar dapat melihat pesona
+          Indonesia bersama - sama!
+        </p>
+        <div class="share-container">
+          <a href="#" class="share onScroll fadeIn hidden delay1">
+            <img
+              src="assets/img/icon/ic_instagram-sketched.svg"
+              alt="Instagram"
+            />
+            <span>Instagram</span>
+          </a>
 
-        <div class="column">
-          <h3>Bagikan</h3>
-          <a href="#">Instagram</a>
-          <a href="#">Whatsapp</a>
-          <a href="#">Twitter</a>
-          <a href="#">Telegram</a>
+          <a href="#" class="share onScroll fadeIn hidden delay2">
+            <img src="assets/img/icon/ic_facebook.svg" alt="Facebook" />
+            <span>Facebook</span>
+          </a>
+
+          <a href="#" class="share onScroll fadeIn hidden delay3">
+            <img src="assets/img/icon/ic_telegram.svg" alt="Telegram" />
+            <span>Telegram</span>
+          </a>
+
+          <a href="#" class="share onScroll fadeIn hidden delay4">
+            <img src="assets/img/icon/ic_whatsapp.svg" alt="Whatsapp" />
+            <span>Whatsapp</span>
+          </a>
         </div>
       </div>
-    </div>
 
-    <div class="bottom">
-      Create with
-      <span><img src="assets/img/icon/ic_heart.svg" alt="Heart" /></span> by
-      TimPD
-    </div>
-  </footer>
+      <div class="bg">
+        <img
+          src="assets/img/illustration/illu_footer_above.svg"
+          alt="illu_footer_above"
+        />
+      </div>
+    </section>
 
-  <!-- ============================== JS SCRIPT ============================== -->
-  <script src="assets/js/jquery-3.4.1.min.js"></script>
-  <script src="assets/js/navbar.js"></script>
-  <script src="assets/js/scrollAnimation.js"></script>
-</body>
+    <!-- =============================== FOOTER =============================== -->
+    <footer>
+      <div class="top">
+        <div class="left">
+          <a href="index.html" class="logo">
+            <img src="assets/img/Logo.svg" alt="Traveline" />
+            <h3>Traveline</h3>
+          </a>
+          <p>
+            Jelajahi nusantara dan rasakah produk juga jajanan lokal dari rumah
+            saja
+          </p>
+        </div>
+        <div class="right">
+          <div class="column">
+            <h3>Destinasi</h3>
+            <a href="destination/malang.html">Malang</a>
+            <a href="#">Yogyakarta</a>
+            <a href="#">Pasuruan</a>
+            <a href="#">Papua</a>
+            <a href="#" class="see">Lihat Semua</a>
+          </div>
 
+          <div class="column">
+            <h3>Produk Lokal</h3>
+            <a href="#">Kopi Luwak</a>
+            <a href="#">Tas Koja</a>
+            <a href="#">Kain Songket</a>
+            <a href="#">Egg Roll Waluh</a>
+            <a href="#" class="see">Lihat Semua</a>
+          </div>
+
+          <div class="column">
+            <h3>Bagikan</h3>
+            <a href="#">Instagram</a>
+            <a href="#">Whatsapp</a>
+            <a href="#">Twitter</a>
+            <a href="#">Telegram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        Create with
+        <span><img src="assets/img/icon/ic_heart.svg" alt="Heart" /></span> by
+        TimPD
+      </div>
+    </footer>
+
+    <!-- ============================== JS SCRIPT ============================== -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/scrollAnimation.js"></script>
+  </body>
 </html>
