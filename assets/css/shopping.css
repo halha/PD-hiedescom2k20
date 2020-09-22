@@ -1,16 +1,4 @@
 /* ====================================== UNIVERSAL ====================================== */
-.color-light-blue {
-  color: var(--blue-light) !important;
-}
-
-.color-red-20 {
-  color: var(--red-20) !important;
-}
-
-.color-white-2 {
-  color: var(--white-2) !important;
-}
-
 .container {
   box-sizing: border-box;
   height: auto;
@@ -388,14 +376,17 @@ p.desc {
     font-size: 1.125rem;
   }
 
+  /* ======================= SECTION 1 ======================= */
   #sec1.container .content {
     width: 100%;
   }
 
+  /* ======================= SECTION 2 ======================= */
   #sec2.container .bg {
     width: 40%;
   }
 
+  /* ======================= SECTION 3 ======================= */
   #sec3.container .bg.bg-1 {
     width: 45%;
   }
@@ -404,6 +395,7 @@ p.desc {
     width: 70%;
   }
 
+  /* ===================== SECTION 3 & 4 ===================== */
   .container .content .card-box > div {
     padding: 0 35px;
   }
