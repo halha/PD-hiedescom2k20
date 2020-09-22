@@ -76,17 +76,18 @@ p.desc {
   line-height: 1.5;
 }
 
-.card-box span {
+.card-box > div span {
   display: none;
   visibility: hidden;
+  width: 1px;
 }
 
 /* ====================================== SECTION 1 ====================================== */
 /* ============================== S1 CONTENT ============================== */
 #sec1.container .content {
+  left: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -101,9 +102,9 @@ p.desc {
 
 #sec1.container .content p {
   font-size: 1.5rem;
-  width: 70%;
-  margin: auto;
   line-height: 1.4;
+  margin: auto;
+  width: 70%;
 }
 
 /* ============================== S1  ARROOW ============================== */
@@ -175,8 +176,8 @@ p.desc {
 }
 
 #sec2.container .bg img {
-  width: 100%;
   pointer-events: none;
+  width: 100%;
 }
 
 /* ====================================== SECTION 3 ====================================== */
@@ -191,54 +192,59 @@ p.desc {
 }
 
 #sec3.container .bg.bg-1 {
-  width: 20%;
   left: 0;
   top: 15%;
+  width: 20%;
 }
 
 #sec3.container .bg.bg-2 {
-  width: 40%;
+  bottom: -3%;
   right: 0;
-  bottom: -5%;
+  width: 40%;
 }
 
 #sec3.container .bg img {
-  width: 100%;
   pointer-events: none;
+  width: 100%;
 }
 
 /* ==================================== SECTION 2 & 3 ==================================== */
 /* =============================== CONTENT =============================== */
 .container .content .card-box {
-  display: flex;
-  justify-content: space-between;
+  box-sizing: border-box;
   margin: auto;
   width: 90%;
-  flex-wrap: wrap;
 }
 
-.container .content .card-box .card {
+.container .content .card-box > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.container .content .card-box > div .card {
   background: var(--white);
   border-radius: 16px;
   box-shadow: 0px 0px 16px rgba(46, 60, 64, 0.4);
+  margin-bottom: 55px;
   overflow: hidden;
   transition: 0.3s;
   width: 30%;
-  margin-bottom: 55px;
 }
 
-.container .content .card-box .card:hover {
+.container .content .card-box > div .card:hover {
   transform: translateY(-20px);
 }
 
-.container .content .card-box .card .img-box {
+.container .content .card-box > div .card .img-box {
   height: 280px;
   margin-bottom: 8px;
   position: relative;
   width: 100%;
 }
 
-.container .content .card-box .card .img-box img {
+.container .content .card-box > div .card .img-box img {
   height: 100%;
   left: 50%;
   pointer-events: none;
@@ -247,35 +253,35 @@ p.desc {
   transform: translateX(-50%);
 }
 
-.container .content .card-box .card .detail h3 {
+.container .content .card-box > div .card .detail h3 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.5rem;
   margin-bottom: 11px;
 }
 
-.container .content .card-box .card .detail p {
+.container .content .card-box > div .card .detail p {
   color: var(--grey-60);
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 23px;
 }
 
-.container .content .card-box .card .detail .bot {
+.container .content .card-box > div .card .detail .bot {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
-.container .content .card-box .card .detail .bot h4 {
+.container .content .card-box > div .card .detail .bot h4 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.5rem;
 }
 
-.container .content .card-box .card .bot a {
+.container .content .card-box > div .card .bot a {
   width: auto;
 }
 
-.container .content .card-box .card .detail {
+.container .content .card-box > div .card .detail {
   box-sizing: border-box;
   padding: 24px;
 }
@@ -283,10 +289,8 @@ p.desc {
 /* ===================================== RESPONSIVE ===================================== */
 /* ================================= TABLET ================================= */
 @media screen and (max-width: 768px) {
-
   /* ======================= UNIVERSAL ======================= */
-  .container,
-  #sec4.container {
+  .container {
     padding: 80px 50px 50px;
   }
 
@@ -295,16 +299,73 @@ p.desc {
   }
 
   h2.title {
-    width: 75%;
+    box-sizing: border-box;
+    padding: 20px 50px;
+    text-align: center;
+    width: 100%;
+  }
+
+  h2.title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .card-box > div span {
+    display: block;
+  }
+
+  /* ======================= SECTION 1 ======================= */
+  #sec1.container .content {
+    width: 80%;
+  }
+
+  /* ======================= SECTION 2 ======================= */
+  #sec2.container {
+    padding: 80px 0 50px;
+  }
+
+  #sec2.container .bg {
+    width: 25%;
+  }
+
+  /* ======================= SECTION 3 ======================= */
+  #sec3.container {
+    padding: 0 0 150px;
+  }
+
+  #sec3.container .bg.bg-1 {
+    width: 30%;
+  }
+
+  /* ===================== SECTION 3 & 4 ===================== */
+  .container .content .card-box {
+    width: 100%;
+  }
+
+  .container .content .card-box > div {
+    overflow-x: auto;
+    padding: 0 50px;
+  }
+
+  .container .content .card-box > div::-webkit-scrollbar {
+    display: none;
+  }
+
+  .container .content .card-box > div .card {
+    flex-shrink: 0;
+    margin-right: 30px;
+    width: 45%;
+  }
+
+  .container .content .card-box > div .card:nth-child(3) {
+    margin-right: 0;
   }
 }
 
 /* ================================= MOBILE ================================= */
 @media screen and (max-width: 426px) {
-
   /* ======================= UNIVERSAL ======================= */
-  .container,
-  #sec4.container {
+  .container {
     padding: 80px 35px 50px;
   }
 
@@ -327,7 +388,27 @@ p.desc {
     font-size: 1.125rem;
   }
 
-  #sec5.container .bg.bg-2 {
+  #sec1.container .content {
+    width: 100%;
+  }
+
+  #sec2.container .bg {
+    width: 40%;
+  }
+
+  #sec3.container .bg.bg-1 {
+    width: 45%;
+  }
+
+  #sec3.container .bg.bg-2 {
     width: 70%;
+  }
+
+  .container .content .card-box > div {
+    padding: 0 35px;
+  }
+
+  .container .content .card-box > div .card {
+    width: 90%;
   }
 }
