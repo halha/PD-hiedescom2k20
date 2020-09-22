@@ -1,16 +1,4 @@
 /* ====================================== UNIVERSAL ====================================== */
-.color-light-blue {
-  color: var(--blue-light) !important;
-}
-
-.color-red-20 {
-  color: var(--red-20) !important;
-}
-
-.color-white-2 {
-  color: var(--white-2) !important;
-}
-
 .container {
   box-sizing: border-box;
   height: auto;
