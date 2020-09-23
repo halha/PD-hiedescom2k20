@@ -1,134 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Not Found | Traveline</title>
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/img/Logo.svg"
-      sizes="96x96"
-    />
 
-    <!-- ================================= CSS ================================= -->
-    <link rel="stylesheet" href="assets/css/navbar.css" />
-    <link rel="stylesheet" href="assets/css/errorPage.css" />
-    <link rel="stylesheet" href="assets/css/footer.css" />
-  </head>
-  <body>
-    <!-- =============================== NAVBAR =============================== -->
-    <nav>
-      <a href="index.html" class="logo">
-        <div class="logo-icon">
-          <img src="assets/img/Logo.svg" alt="Traveline" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Not Found | Traveline</title>
+  <link rel="icon" type="image/png" href="assets/img/Logo.svg" sizes="96x96" />
+
+  <!-- ================================= CSS ================================= -->
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/errorPage.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+</head>
+
+<body>
+  <!-- =============================== NAVBAR =============================== -->
+  <nav>
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <img src="assets/img/Logo.svg" alt="Traveline" />
+      </div>
+      <span>Traveline</span>
+    </a>
+
+    <div class="show white"></div>
+    <ul class="primary">
+      <div>
+        <li><a href="index.html">Beranda</a></li>
+        <li>
+          <a href="index.html#sec3">Destinasi</a>
+        </li>
+        <li>
+          <a href="shopping.html">Belanja</a>
+        </li>
+        <li>
+          <a href="about.html">Tentang</a>
+        </li>
+      </div>
+      <span class="hide black">x</span>
+    </ul>
+  </nav>
+
+  <!-- ============================== SECTION 1 ============================== -->
+  <section id="sec1" class="container">
+    <div class="left">
+      <div class="img-box">
+        <img src="assets/img/illustration/illu_404.svg" alt="illu_404" />
+      </div>
+    </div>
+    <div class="right">
+      <h1 class="title">404</h1>
+      <h2>Halaman Tidak Ditemukan :(</h2>
+      <a href="index.html">
+        <span>Kembali ke Beranda</span>
+        <div class="icon-box">
+          <img src="assets/img/icon/ic_arrow-right.svg" alt="ic_arrow-right" />
         </div>
-        <span>Traveline</span>
       </a>
+    </div>
+  </section>
 
-      <div class="show white"></div>
-      <ul class="primary">
-        <div>
-          <li><a href="index.html">Beranda</a></li>
-          <li>
-            <a href="index.html#sec3">Destinasi</a>
-          </li>
-          <li>
-            <a href="shopping.html">Belanja</a>
-          </li>
-          <li>
-            <a href="about.html">Tentang</a>
-          </li>
-        </div>
-        <span class="hide black">x</span>
-      </ul>
-    </nav>
-
-    <!-- ============================== SECTION 1 ============================== -->
-    <section id="sec1" class="container">
+  <!-- =============================== FOOTER =============================== -->
+  <footer>
+    <div class="top">
       <div class="left">
-        <div class="img-box">
-          <img src="assets/img/illustration/illu_404.svg" alt="illu_404" />
-        </div>
+        <a href="index.html" class="logo">
+          <img src="assets/img/Logo.svg" alt="Traveline" />
+          <h3>Traveline</h3>
+        </a>
+        <p>
+          Jelajahi nusantara dan rasakah produk juga jajanan lokal dari rumah
+          saja
+        </p>
       </div>
       <div class="right">
-        <h1 class="title">404</h1>
-        <h2>Halaman Tidak Ditemukan :(</h2>
-        <a href="index.html">
-          <span>Kembali ke Beranda</span>
-          <div class="icon-box">
-            <img
-              src="assets/img/icon/ic_arrow-right.svg"
-              alt="ic_arrow-right"
-            />
-          </div>
-        </a>
-      </div>
-    </section>
+        <div class="column">
+          <h3>Destinasi</h3>
+          <a href="destination/malang.html">Malang</a>
+          <a href="destination/surabaya.html">Surabaya</a>
+          <a href="underDev.html">Yogyakarta</a>
+          <a href="underDev.html">Bali</a>
+          <a href="index.html#sec3" class="see">Lihat Semua</a>
+        </div>
 
-    <!-- =============================== FOOTER =============================== -->
-    <footer>
-      <div class="top">
-        <div class="left">
-          <a href="index.html" class="logo">
-            <img src="assets/img/Logo.svg" alt="Traveline" />
-            <h3>Traveline</h3>
+        <div class="column">
+          <h3>Produk Lokal</h3>
+          <a href="underDev.html">Kopi Luwak</a>
+          <a href="underDev.html">Tas Koja</a>
+          <a href="underDev.html">Kain Songket</a>
+          <a href="underDev.html">Egg Roll Waluh</a>
+          <a href="shopping.html" class="see">Lihat Semua</a>
+        </div>
+
+        <div class="column">
+          <h3>Bagikan</h3>
+          <a href="https://twitter.com/intent/tweet?url=%20https%3A%2F%2Ftraveline.web.app%2F&text=Bosen%20dirumah%20terus%3F%20Kuy%20Buka%20Traveline"
+            target="_blank">Twitter</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://traveline.web.app/" target="_blank">Facebook
           </a>
-          <p>
-            Jelajahi nusantara dan rasakah produk juga jajanan lokal dari rumah
-            saja
-          </p>
-        </div>
-        <div class="right">
-          <div class="column">
-            <h3>Destinasi</h3>
-            <a href="destination/malang.html">Malang</a>
-            <a href="underDev.html">Yogyakarta</a>
-            <a href="underDev.html">Pasuruan</a>
-            <a href="underDev.html">Papua</a>
-            <a href="underDev.html" class="see">Lihat Semua</a>
-          </div>
-
-          <div class="column">
-            <h3>Produk Lokal</h3>
-            <a href="underDev.html">Kopi Luwak</a>
-            <a href="underDev.html">Tas Koja</a>
-            <a href="underDev.html">Kain Songket</a>
-            <a href="underDev.html">Egg Roll Waluh</a>
-            <a href="underDev.html" class="see">Lihat Semua</a>
-          </div>
-
-          <div class="column">
-            <h3>Bagikan</h3>
-            <a href="#" target="_blank">Instagram</a>
-            <a
-              href="https://www.facebook.com/sharer/sharer.php?u=https://traveline.web.app/"
-              target="_blank"
-              >Facebook
-            </a>
-            <a
-              href="https://t.me/share/url?url=https%3A%2F%2Ftraveline.web.app%2F&text=Bosen%20dirumah%20terus%3F%20Kuy%20Buka%20Traveline%21"
-              target="_blank"
-              >Telegram
-            </a>
-            <a
-              href="https://api.whatsapp.com/send?text=Bosen%20Dirumah%20Terus%3F%20Kuy%20Buka%20Traveline%20di%20https%3A%2F%2Ftraveline.web.app%2F"
-              target="_blank"
-              >Whatsapp
-            </a>
-          </div>
+          <a href="https://t.me/share/url?url=https%3A%2F%2Ftraveline.web.app%2F&text=Bosen%20dirumah%20terus%3F%20Kuy%20Buka%20Traveline%21"
+            target="_blank">Telegram
+          </a>
+          <a href="https://api.whatsapp.com/send?text=Bosen%20Dirumah%20Terus%3F%20Kuy%20Buka%20Traveline%20di%20https%3A%2F%2Ftraveline.web.app%2F"
+            target="_blank">Whatsapp
+          </a>
         </div>
       </div>
+    </div>
 
-      <div class="bottom">
-        Create with
-        <span><img src="assets/img/icon/ic_heart.svg" alt="Heart" /></span> by
-        TimPD
-      </div>
-    </footer>
+    <div class="bottom">
+      Create with
+      <span><img src="assets/img/icon/ic_heart.svg" alt="Heart" /></span> by
+      TimPD
+    </div>
+  </footer>
 
-    <!-- ============================== JS SCRIPT ============================== -->
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/navbar.js"></script>
-  </body>
+  <!-- ============================== JS SCRIPT ============================== -->
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/navbar.js"></script>
+</body>
+
 </html>
