@@ -5,7 +5,7 @@ $(document).ready(() => {
   });
 
   function searchCity() {
-    var input = document.getElementById('cityValue').value.toLowerCase();
+    const input = document.getElementById('cityValue').value.toLowerCase();
 
     switch (input) {
       case 'malang':
