@@ -18,8 +18,7 @@ $(document).ready(() => {
   $('.onScrollCounter').each(function () {
     $(window).scroll((e) => {
       let scroll = $(window).scrollTop() + $(window).height();
-      const breakSec = $(this).offset().top + 100;
-
+      const breakSec = $(this).offset().top + 50;
       if (scroll > breakSec && i == 1) {
         count();
         i++;
@@ -37,7 +36,7 @@ function count() {
           Counter: $(this).text(),
         },
         {
-          duration: 2000,
+          duration: 1000,
           easing: 'swing',
           step: function (now) {
             $(this).text(Math.ceil(now).toLocaleString());
