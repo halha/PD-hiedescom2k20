@@ -12,7 +12,7 @@
 h1.title {
   color: #ee6a51;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 7rem;
+  font-size: 5rem;
   margin-bottom: 20px;
   text-transform: capitalize;
 }
@@ -24,27 +24,27 @@ h1.title {
   justify-content: center;
 }
 
-#sec1.container > div {
+#sec1.container>div {
   width: 50%;
 }
 
 /* =============================== S1  LEFT =============================== */
-#sec1.container .left {
+/* #sec1.container .left {
   margin-right: 41px;
-}
+} */
 
 #sec1.container .left .img-box {
-  width: 90%;
+  width: 80%;
   margin-left: auto;
 }
 
 #sec1.container .left .img-box img {
-  width: 100%;
+  width: 80%;
 }
 
 /* =============================== S1 RIGHT =============================== */
 #sec1.container .right h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 500;
   font-family: 'Ubuntu', sans-serif;
   margin-bottom: 20px;
@@ -54,7 +54,7 @@ h1.title {
   text-decoration: none;
   display: flex;
   align-items: center;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 #sec1.container .right a span {
@@ -67,12 +67,13 @@ h1.title {
 }
 
 #sec1.container .right a .icon-box img {
-  width: 100%;
+  width: 80%;
 }
 
 /* ===================================== RESPONSIVE ===================================== */
 /* ================================= TABLET ================================= */
 @media screen and (max-width: 768px) {
+
   /* ======================= UNIVERSAL ======================= */
   .container,
   #sec4.container {
@@ -89,7 +90,7 @@ h1.title {
     flex-flow: column;
   }
 
-  #sec1.container > div {
+  #sec1.container>div {
     width: 70%;
   }
 
@@ -105,6 +106,7 @@ h1.title {
 
 /* ================================= MOBILE ================================= */
 @media screen and (max-width: 426px) {
+
   /* ======================= UNIVERSAL ======================= */
   .container {
     padding: 80px 35px 50px;
@@ -115,7 +117,7 @@ h1.title {
   }
 
   /* ======================= SECTION 1 ======================= */
-  #sec1.container > div {
+  #sec1.container>div {
     width: 100%;
   }
 
