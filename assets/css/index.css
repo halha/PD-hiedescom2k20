@@ -132,12 +132,16 @@ p.desc {
   width: 100%;
 }
 
-#sec1.container .top .left .search-box input {
+#sec1.container .top .left .search-box form {
+  width: 90%;
+}
+
+#sec1.container .top .left .search-box form input {
   border: none;
   background: none;
   font-size: 1rem;
   outline: none;
-  width: 90%;
+  width: 100%;
 }
 
 /* ===================== S1 TOP RIGHT ===================== */

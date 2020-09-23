@@ -3,6 +3,7 @@
 
 :root {
   --black: #000;
+  --blue: #2d9cdb;
   --blue-light: #ecfbf9;
   --blue-dark-100: #252946;
   --blue-dark-80: #525872;
@@ -236,7 +237,6 @@ nav ul .hide {
     right: 40px;
     top: 40px;
   }
-
 
   /* ======================= HIDE SHOW ======================= */
   nav .show,
