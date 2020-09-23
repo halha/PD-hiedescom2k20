@@ -91,11 +91,11 @@ p.desc {
 }
 
 #sec1.container .content img {
-  width: 112px;
-  height: 112px;
-  pointer-events: none;
-  margin: auto auto 70px;
   display: block;
+  height: 112px;
+  margin: auto auto 70px;
+  pointer-events: none;
+  width: 112px;
 }
 
 #sec1.container .content h1.title {

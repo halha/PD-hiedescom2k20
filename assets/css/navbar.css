@@ -69,6 +69,7 @@ nav.fixed {
   position: fixed !important;
 }
 
+/* ======================= ANIMATION ======================= */
 @keyframes show {
   0% {
     transform: translateY(-70px);
