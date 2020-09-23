@@ -61,11 +61,6 @@ h2.title::after {
   width: 100px;
 }
 
-p.desc {
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
 .card-box span {
   display: none;
   visibility: hidden;
@@ -300,10 +295,7 @@ p.desc {
 }
 
 #sec3.container .thumb > a:hover {
-  /* border: 5px solid white; */
   transform: scale(1.1);
-  /* height: 65px;
-  width: 65px; */
 }
 
 #sec3.container .thumb a img {
@@ -621,10 +613,6 @@ p.desc {
     margin-bottom: 30px;
     padding: 20px 0;
     width: 100%;
-  }
-
-  p.desc {
-    font-size: 1.125rem;
   }
 
   /* ======================= SECTION 1 ======================= */

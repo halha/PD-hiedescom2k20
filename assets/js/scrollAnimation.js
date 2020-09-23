@@ -4,6 +4,7 @@ $(document).ready(() => {
     $(window).scroll((e) => {
       let scroll = $(window).scrollTop() + $(window).height();
       const breakSec = $(this).offset().top;
+
       if (scroll > breakSec) {
         $(this).removeClass('hidden');
         $(this).addClass('play');
@@ -12,13 +13,13 @@ $(document).ready(() => {
   });
 
   //CounterScroll
-  var i = 1;
+  let i = 1;
+
   $('.onScrollCounter').each(function () {
     $(window).scroll((e) => {
       let scroll = $(window).scrollTop() + $(window).height();
       const breakSec = $(this).offset().top + 50;
       if (scroll > breakSec && i == 1) {
-        console.log('jalan');
         count();
         i++;
       }

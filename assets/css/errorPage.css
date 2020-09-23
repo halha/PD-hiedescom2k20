@@ -24,15 +24,11 @@ h1.title {
   justify-content: center;
 }
 
-#sec1.container>div {
+#sec1.container > div {
   width: 50%;
 }
 
 /* =============================== S1  LEFT =============================== */
-/* #sec1.container .left {
-  margin-right: 41px;
-} */
-
 #sec1.container .left .img-box {
   width: 80%;
   margin-left: auto;
@@ -73,7 +69,6 @@ h1.title {
 /* ===================================== RESPONSIVE ===================================== */
 /* ================================= TABLET ================================= */
 @media screen and (max-width: 768px) {
-
   /* ======================= UNIVERSAL ======================= */
   .container,
   #sec4.container {
@@ -90,7 +85,7 @@ h1.title {
     flex-flow: column;
   }
 
-  #sec1.container>div {
+  #sec1.container > div {
     width: 70%;
   }
 
@@ -106,7 +101,6 @@ h1.title {
 
 /* ================================= MOBILE ================================= */
 @media screen and (max-width: 426px) {
-
   /* ======================= UNIVERSAL ======================= */
   .container {
     padding: 80px 35px 50px;
@@ -117,7 +111,7 @@ h1.title {
   }
 
   /* ======================= SECTION 1 ======================= */
-  #sec1.container>div {
+  #sec1.container > div {
     width: 100%;
   }
 
