@@ -21,7 +21,6 @@ $(document).ready(() => {
       const breakSec = $(this).offset().top + 100;
 
       if (scroll > breakSec && i == 1) {
-        console.log('jalan');
         count();
         i++;
       }
