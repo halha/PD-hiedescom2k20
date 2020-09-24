@@ -477,6 +477,7 @@ p.desc {
 /* ===================================== RESPONSIVE ===================================== */
 /* ================================= TABLET ================================= */
 @media screen and (max-width: 768px) {
+
   /* ======================= UNIVERSAL ======================= */
   .container,
   #sec4.container {
@@ -598,6 +599,7 @@ p.desc {
 
 /* ================================= MOBILE ================================= */
 @media screen and (max-width: 426px) {
+
   /* ======================= UNIVERSAL ======================= */
   .container,
   #sec4.container {
@@ -654,6 +656,7 @@ p.desc {
   }
 
   #sec1.container .top .right .img-box {
+    margin-top: -70px;
     width: 80%;
   }
 
