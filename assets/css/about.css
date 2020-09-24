@@ -46,7 +46,8 @@ h1.title {
   color: var(--primary-color);
   font-family: 'Ubuntu', sans-serif;
   font-size: 3.6rem;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  text-align: center;
   text-transform: capitalize;
 }
 
@@ -54,26 +55,14 @@ h2.title {
   color: var(--primary-color);
   font-family: 'Ubuntu', sans-serif;
   font-size: 2.5rem;
-  margin-bottom: 62px;
-  padding: 20px 0;
+  margin-bottom: 45px;
   position: relative;
   text-transform: capitalize;
 }
 
-h2.title::after {
-  background: var(--primary-color);
-  bottom: 0;
-  content: '';
-  height: 4px;
-  left: 15%;
-  position: absolute;
-  transform: translateX(-15%);
-  width: 100px;
-}
-
 p.desc {
-  font-size: 1.25rem;
-  line-height: 1.5;
+  font-size: 1.5rem;
+  line-height: 1.3;
 }
 
 /* ====================================== SECTION 1 ====================================== */
@@ -155,6 +144,155 @@ p.desc {
   width: 100%;
 }
 
+/* ====================================== SECTION 2 ====================================== */
+#sec2.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============================== S2 CONTENT ============================== */
+#sec2.container .content {
+  width: 75%;
+  margin: auto;
+}
+
+#sec2.container .content * {
+  text-align: center;
+}
+
+#sec2.container .content h1.title {
+  margin-bottom: 60px;
+  text-transform: unset;
+}
+
+/* ====================================== SECTION 3 ====================================== */
+#sec3.container {
+  min-height: auto;
+}
+
+#sec3.container h1.title {
+  margin-bottom: 120px;
+}
+
+/* =============================== S3  CARD =============================== */
+#sec3.container .card-box {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#sec3.container .card-box .card {
+  color: var(--dark-blue-100);
+  text-decoration: none;
+  width: 30%;
+}
+
+#sec3.container .card-box .card .img-box {
+  width: 250px;
+  height: 250px;
+  margin: auto auto 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#sec3.container .card-box .card .img-box img {
+  width: 100%;
+}
+
+#sec3.container .card-box .card h3 {
+  text-align: center;
+}
+
+#sec3.container .card-box .card h3:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+/* ====================================== SECTION 4 ====================================== */
+#sec4.container {
+  padding-bottom: 245px;
+}
+
+#sec4.container p.desc {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+/* ============================== S4 CONTENT ============================== */
+#sec4.container .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#sec4.container .content > div {
+  width: 50%;
+}
+
+.contributor p {
+  color: var(--blue-dark-100);
+  font-size: 1.5rem;
+  margin-bottom: 22px;
+  font-weight: bold;
+}
+
+.contributor p:last-child {
+  margin-bottom: 0;
+}
+
+.contributor p a {
+  font-weight: normal;
+}
+
+/* ======================= S4  RIGHT ======================= */
+#sec4.container .content .right .website {
+  margin-bottom: 86px;
+}
+
+/* ============================ S4  BACKGROUND ============================ */
+#sec4.container .bg {
+  bottom: -80px;
+  position: absolute;
+  right: 0;
+  transform: translateY(5%);
+  width: 40%;
+  z-index: -1;
+}
+
+#sec4.container .bg img {
+  pointer-events: none;
+  width: 100%;
+}
+
+/* ======================================= MAIN BG ======================================= */
+main {
+  position: relative;
+}
+
+main .bg-main {
+  position: absolute;
+  z-index: -1;
+}
+
+main .bg-main.bg-1 {
+  top: 27%;
+  right: 0;
+  width: 15%;
+}
+
+main .bg-main.bg-2 {
+  top: 56%;
+  left: -2%;
+  width: 15%;
+}
+
+main .bg-main img {
+  width: 100%;
+  pointer-events: none;
+}
+
 /* ===================================== RESPONSIVE ===================================== */
 /* ================================= TABLET ================================= */
 @media screen and (max-width: 768px) {
@@ -183,13 +321,51 @@ p.desc {
   #sec1.container .content {
     width: 80%;
   }
+
+  #sec2.container {
+    min-height: auto;
+  }
+
+  #sec3.container .card-box .card .img-box {
+    width: 150px;
+    height: 150px;
+  }
+
+  #sec4.container p.desc {
+    width: 75%;
+  }
+
+  #sec4.container .content {
+    flex-flow: column;
+  }
+
+  #sec4.container .content > div {
+    width: 80%;
+    margin: auto;
+  }
+
+  #sec4.container .content > div:first-child {
+    margin-bottom: 89px;
+  }
+
+  #sec4.container .bg {
+    width: 50%;
+  }
+
+  main .bg-main.bg-1 {
+    top: 30%;
+  }
+
+  main .bg-main.bg-2 {
+    top: 45%;
+  }
 }
 
 /* ================================= MOBILE ================================= */
 @media screen and (max-width: 426px) {
   /* ======================= UNIVERSAL ======================= */
   .container {
-    padding: 80px 35px 50px;
+    padding: 50px 35px 50px;
   }
 
   .button {
@@ -198,7 +374,7 @@ p.desc {
   }
 
   h1.title {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
   }
 
   h2.title {
@@ -214,5 +390,59 @@ p.desc {
   /* ======================= SECTION 1 ======================= */
   #sec1.container .content {
     width: 100%;
+  }
+
+  #sec2.container .content {
+    width: 100%;
+  }
+
+  #sec2.container .content p.desc {
+    text-align: left;
+  }
+
+  #sec3.container .card-box {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #sec3.container .card-box .card {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  #sec3.container h1.title {
+    margin-bottom: 60px;
+  }
+
+  #sec3.container .card-box .card:last-child {
+    margin-bottom: 0;
+  }
+
+  #sec4.container p.desc {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+  #sec4.container .content > div {
+    width: 100%;
+  }
+
+  .contributor p {
+    font-size: 1rem;
+  }
+
+  #sec4.container .bg {
+    width: 60%;
+    bottom: -20px;
+  }
+
+  main .bg-main.bg-1 {
+    width: 35%;
+    top: 20%;
+  }
+
+  main .bg-main.bg-2 {
+    width: 35%;
+    top: 48%;
   }
 }

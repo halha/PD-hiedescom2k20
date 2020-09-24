@@ -1,126 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang | Traveline</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/Logo.svg"
+      sizes="96x96"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tentang | Traveline</title>
-  <link rel="icon" type="image/png" href="assets/img/Logo.svg" sizes="96x96" />
+    <!-- ================================= CSS ================================= -->
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/about.css" />
+    <link rel="stylesheet" href="assets/css/scrollAnimation.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <style>
+      .bg1 {
+        background-image: url('assets/img/Beranda/map_bg.svg');
+      }
+    </style>
+  </head>
 
-  <!-- ================================= CSS ================================= -->
-  <link rel="stylesheet" href="assets/css/navbar.css" />
-  <link rel="stylesheet" href="assets/css/about.css" />
-  <link rel="stylesheet" href="assets/css/scrollAnimation.css" />
-  <link rel="stylesheet" href="assets/css/footer.css" />
-  <style>
-    .bg1 {
-      background-image: url('assets/img/Beranda/map_bg.svg');
-    }
-  </style>
-</head>
-
-<body>
-  <!-- =============================== NAVBAR =============================== -->
-  <nav>
-    <a href="index.html" class="logo">
-      <div class="logo-icon">
-        <img src="assets/img/Logo.svg" alt="Traveline" />
-      </div>
-      <span>Traveline</span>
-    </a>
-
-    <div class="show white"></div>
-    <ul class="primary">
-      <div>
-        <li><a href="index.html">Beranda</a></li>
-        <li>
-          <a href="index.html#sec3">Destinasi</a>
-        </li>
-        <li>
-          <a href="shopping.html">Belanja</a>
-        </li>
-        <li>
-          <a class="active">Tentang</a>
-        </li>
-      </div>
-      <span class="hide black">x</span>
-    </ul>
-  </nav>
-
-  <!-- ============================== SECTION 1 ============================== -->
-  <section id="sec1" class="container">
-    <div class="content">
-      <img src="assets/img/Logo.svg" alt="Logo" />
-      <h1 class="title play fadeIn">Tentang Traveline</h1>
-    </div>
-    <a href="#sec2" class="arrow">
-      <img class="play delay4 fadeInUp" src="assets/img/icon/ic_arrow-white.svg" alt="ic_arrow-white" />
-    </a>
-    <div class="bg1"></div>
-  </section>
-
-  <!-- ============================== SECTION 2 ============================== -->
-  <section id="sec2" class="container"></section>
-
-  <!-- =============================== FOOTER =============================== -->
-  <footer>
-    <div class="top">
-      <div class="left">
-        <a href="index.html" class="logo">
+  <body>
+    <!-- =============================== NAVBAR =============================== -->
+    <nav>
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
           <img src="assets/img/Logo.svg" alt="Traveline" />
-          <h3>Traveline</h3>
+        </div>
+        <span>Traveline</span>
+      </a>
+
+      <div class="show white"></div>
+      <ul class="primary">
+        <div>
+          <li><a href="index.html">Beranda</a></li>
+          <li>
+            <a href="index.html#sec3">Destinasi</a>
+          </li>
+          <li>
+            <a href="shopping.html">Belanja</a>
+          </li>
+          <li>
+            <a class="active">Tentang</a>
+          </li>
+        </div>
+        <span class="hide black">x</span>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- ============================== SECTION 1 ============================== -->
+      <section id="sec1" class="container">
+        <div class="content">
+          <img src="assets/img/Logo.svg" alt="Logo" />
+          <h1 class="title play fadeIn">Tentang Traveline</h1>
+        </div>
+        <a href="#sec2" class="arrow">
+          <img
+            class="play delay4 fadeInUp"
+            src="assets/img/icon/ic_arrow-white.svg"
+            alt="ic_arrow-white"
+          />
         </a>
-        <p>
-          Jelajahi nusantara dan rasakah produk juga jajanan lokal dari rumah
-          saja
+        <div class="bg1"></div>
+      </section>
+
+      <!-- ============================== SECTION 2 ============================== -->
+      <section id="sec2" class="container">
+        <div class="content">
+          <h1 class="title">“ Kami jenuh dirumah aja, begitu juga anda ”</h1>
+          <p class="desc">
+            Awal mula ide pembuatan Traveline adalah keinginan kami untuk
+            melihat keindahan nusantara walaupun dari rumah, dengan begitu
+            lahirlah Traveline yang dimana website ini nantinya bisa dinikmati
+            juga oleh khalayak ramai. Kami juga menyediakan produk hasil UMKM
+            lokal, karena kami juga ingin membantu perekonomian masyarakat
+            disekitar tempat wisata yang menurun karena pandemi ini.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================== SECTION 3 ============================== -->
+      <section id="sec3" class="container">
+        <h1 class="title">Meet The Team</h1>
+
+        <div class="card-box">
+          <a href="https://github.com/angkasa27" class="card">
+            <div class="img-box">
+              <img
+                src="assets/img/About/Dimas Angkasa Nurindra-min.jpg"
+                alt="Dimas Angkasa Nurindra"
+              />
+            </div>
+            <h3>Dimas Angkasa Nurindra</h3>
+            <h3 class="role">Hustler</h3>
+          </a>
+
+          <a href="https://github.com/halha" class="card">
+            <div class="img-box">
+              <img
+                src="assets/img/About/Hammam Al-Hakim-min.jpg"
+                alt="Hammam Al-Hakim"
+              />
+            </div>
+            <h3>Hammam Al-Hakim</h3>
+            <h3 class="role">Hacker</h3>
+          </a>
+
+          <a href="https://github.com/arknmaulana" class="card">
+            <div class="img-box">
+              <img
+                src="assets/img/About/Maulana Hilmi Arkan-min.jpg"
+                alt="Maulana Hilmi Arkan"
+              />
+            </div>
+            <h3>Maulana Hilmi Arkan</h3>
+            <h3 class="role">Hipster</h3>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============================== SECTION 4 ============================== -->
+      <section id="sec4" class="container">
+        <h1 class="title">Daftar Pustaka</h1>
+        <p class="desc">
+          Terima kasih kepada seluruh kontributor yang telah menshare free
+          stock-photo dan artikelnya untuk digunakan di Traveline
         </p>
+
+        <div class="content">
+          <div class="left">
+            <h2 class="title">Via Unsplash</h2>
+
+            <div class="contributor">
+              <p>
+                Monumen Selamat Datang by
+                <a href="https://unsplash.com/@ekoherwantoro" target="_blank"
+                  >@ekoherwantoro</a
+                >
+              </p>
+              <p>
+                Kota Tua by
+                <a href="https://unsplash.com/@al_fadhly_" target="_blank"
+                  >@al_fadhly_</a
+                >
+              </p>
+              <p>
+                Lapangan Monas by
+                <a href="https://unsplash.com/@adityacs" target="_blank"
+                  >@adityacs</a
+                >
+              </p>
+              <p>
+                Seberang Menara Astra by
+                <a href="https://unsplash.com/@findracadabra" target="_blank"
+                  >@findracadabra</a
+                >
+              </p>
+              <p>
+                Gelora Bung Karno by
+                <a href="https://unsplash.com/@pretentiousmaru" target="_blank"
+                  >@pretentiousmaru</a
+                >
+              </p>
+              <p>
+                Sunda Kelapa Harbour by
+                <a href="https://unsplash.com/@ekoherwantoro" target="_blank"
+                  >@ekoherwantoro</a
+                >
+              </p>
+              <p>
+                Kota Tua by
+                <a href="https://unsplash.com/@elvanputra_" target="_blank"
+                  >@elvanputra_</a
+                >
+              </p>
+              <p>
+                Padar Island by
+                <a href="https://unsplash.com/@onetnya_" target="_blank"
+                  >@onetnya_</a
+                >
+              </p>
+              <p>
+                Pantai Pink by
+                <a href="https://unsplash.com/@marcuswoodbridge" target="_blank"
+                  >@marcuswoodbridge</a
+                >
+              </p>
+              <p>
+                Pulau Komodo by
+                <a href="https://unsplash.com/@marcellaoscar" target="_blank"
+                  >@marcellaoscar</a
+                >
+              </p>
+              <p>
+                Gili Lawa Darat by
+                <a href="https://unsplash.com/@marcellaoscar" target="_blank"
+                  >@marcellaoscar</a
+                >
+              </p>
+              <p>
+                Wae Rebo Village by
+                <a href="https://unsplash.com/@marcellaoscar" target="_blank"
+                  >@marcellaoscar</a
+                >
+              </p>
+              <p>
+                Beji Temple by
+                <a href="https://unsplash.com/@powwpic" target="_blank"
+                  >@powwpic</a
+                >
+              </p>
+              <p>
+                Penglipuran Village by
+                <a href="https://unsplash.com/@rubenhutabarat" target="_blank"
+                  >@rubenhutabarat</a
+                >
+              </p>
+              <p>
+                Pura Tirta Empul by
+                <a href="https://unsplash.com/@fgiorgio" target="_blank"
+                  >@fgiorgio</a
+                >
+              </p>
+              <p>
+                Gunung Agung by
+                <a href="https://unsplash.com/@maksymiv" target="_blank"
+                  >@maksymiv</a
+                >
+              </p>
+              <p>
+                Klingking Beach by
+                <a href="https://unsplash.com/@pepy_papoy" target="_blank"
+                  >@pepy_papoy</a
+                >
+              </p>
+              <p>
+                Bali by
+                <a
+                  href="https://unsplash.com/@sebaspenalambarri"
+                  target="_blank"
+                  >@sebaspenalambarri</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="website">
+              <h2 class="title">Via Other Website</h2>
+
+              <div class="contributor">
+                <p>
+                  Kerak Telor by
+                  <a
+                    href="https://en.wikipedia.org/wiki/Kerak_telor#/media/File:Kerak_Telor.jpg"
+                    target="_blank"
+                    >Dainsleaf</a
+                  >
+                </p>
+                <p>
+                  Roti Buaya by
+                  <a
+                    href="https://en.wikipedia.org/wiki/Roti_buaya#/media/File:Roti_Buaya.JPG"
+                    target="_blank"
+                    >Gunawan Kartapranata</a
+                  >
+                </p>
+                <p>
+                  Semur Jengkol by
+                  <a
+                    href="https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2017/09/kuliner-betawi-4.jpg"
+                    target="_blank"
+                    >Wikimedia</a
+                  >
+                </p>
+                <p>
+                  Se’i by
+                  <a
+                    href="https://cdn.idntimes.com/content-images/post/20170731/daging-babi-se-i-07a44c42fa94b99882dbd1b339f97ecc.jpg"
+                    target="_blank"
+                    >Tripadvisor.com</a
+                  >
+                </p>
+                <p>
+                  Jagung Catemak by
+                  <a
+                    href="https://cdn.idntimes.com/content-images/post/20170731/ciucborwsaaxtnz-546c9703d1e65af5ebe5600222fd346d.jpg"
+                    target="_blank"
+                    >Twitter.com/tehbotolsosroid</a
+                  >
+                </p>
+                <p>
+                  Jagung Bose by
+                  <a
+                    href="https://cdn.idntimes.com/content-images/post/20170801/resep-membuat-jagung-bose-khas-ntt-99009cb5626bff10b5583beb7ef335da.jpg"
+                    target="_blank"
+                    >resepdanmakanan.com</a
+                  >
+                </p>
+                <p>
+                  Nasi Tepeng by
+                  <a
+                    href="https://cdn.idntimes.com/content-images/post/20170717/nasi-tepeng-dari-wwwthebalidailycom-e8975d4abbe9a9615dd1506ed3ca8e87.jpg"
+                    target="_blank"
+                    >kuliner.panduanwisata.id</a
+                  >
+                </p>
+                <p>
+                  Sate Lilit by
+                  <a
+                    href="https://cdn.idntimes.com/content-images/post/20170717/sate-lilit-beec4dfe98e090270f4f8318dfb08e34.jpg"
+                    target="_blank"
+                    >fourpointsbalikuta.com</a
+                  >
+                </p>
+                <p>
+                  Tanah Lot by
+                  <a href="https://unsplash.com/@jannerboy62" target="_blank"
+                    >@jannerboy62</a
+                  >
+                </p>
+                <p>
+                  Tum Ayam by
+                  <a
+                    href="https://cdn.idntimes.com/content-images/post/20170717/b576027a02e68a0072286e4f6c9aec7e-ayam-babi-2e366432c3c62fbe445673bf8807f5df.jpg"
+                    target="_blank"
+                    >pinterest.com/Lusi Y</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="article">
+              <h2 class="title">Article Resources</h2>
+
+              <div class="contributor">
+                <p>
+                  <a href="https://www.idntimes.com/"
+                    >https://www.idntimes.com</a
+                  >
+                </p>
+                <p>
+                  <a href="https://id.wikipedia.org/"
+                    >https://id.wikipedia.org</a
+                  >
+                </p>
+                <p>
+                  <a href="https://www.tokopedia.com/blog/"
+                    >https://www.tokopedia.com/blog</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg">
+          <img
+            src="assets/img/illustration/illu_footer_above.svg"
+            alt="illu_footer_above"
+          />
+        </div>
+      </section>
+
+      <div class="bg-main bg-1">
+        <img
+          src="assets/img/illustration/illu_shop_right.svg"
+          alt="illu_shop_right"
+        />
       </div>
-      <div class="right">
-        <div class="column">
-          <h3>Destinasi</h3>
-          <a href="destination/malang.html">Malang</a>
-          <a href="destination/surabaya.html">Surabaya</a>
-          <a href="underDev.html">Yogyakarta</a>
-          <a href="underDev.html">Bali</a>
-          <a href="index.html#sec3" class="see">Lihat Semua</a>
-        </div>
 
-        <div class="column">
-          <h3>Produk Lokal</h3>
-          <a href="underDev.html">Kopi Luwak</a>
-          <a href="underDev.html">Tas Koja</a>
-          <a href="underDev.html">Kain Songket</a>
-          <a href="underDev.html">Egg Roll Waluh</a>
-          <a href="shopping.html" class="see">Lihat Semua</a>
-        </div>
+      <div class="bg-main bg-2">
+        <img
+          src="assets/img/illustration/illu_shop_left.svg"
+          alt="illu_shop_left"
+        />
+      </div>
+    </main>
 
-        <div class="column">
-          <h3>Bagikan</h3>
-          <a href="https://twitter.com/intent/tweet?url=%20https%3A%2F%2Ftraveline.web.app%2F&text=Bosen%20dirumah%20terus%3F%20Kuy%20Buka%20Traveline"
-            target="_blank">Twitter</a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://traveline.web.app/" target="_blank">Facebook
+    <!-- =============================== FOOTER =============================== -->
+    <footer>
+      <div class="top">
+        <div class="left">
+          <a href="index.html" class="logo">
+            <img src="assets/img/Logo.svg" alt="Traveline" />
+            <h3>Traveline</h3>
           </a>
-          <a href="https://t.me/share/url?url=https%3A%2F%2Ftraveline.web.app%2F&text=Bosen%20dirumah%20terus%3F%20Kuy%20Buka%20Traveline%21"
-            target="_blank">Telegram
-          </a>
-          <a href="https://api.whatsapp.com/send?text=Bosen%20Dirumah%20Terus%3F%20Kuy%20Buka%20Traveline%20di%20https%3A%2F%2Ftraveline.web.app%2F"
-            target="_blank">Whatsapp
-          </a>
+          <p>
+            Jelajahi nusantara dan rasakah produk juga jajanan lokal dari rumah
+            saja
+          </p>
+        </div>
+        <div class="right">
+          <div class="column">
+            <h3>Destinasi</h3>
+            <a href="destination/malang.html">Malang</a>
+            <a href="destination/surabaya.html">Surabaya</a>
+            <a href="underDev.html">Yogyakarta</a>
+            <a href="underDev.html">Bali</a>
+            <a href="index.html#sec3" class="see">Lihat Semua</a>
+          </div>
+
+          <div class="column">
+            <h3>Produk Lokal</h3>
+            <a href="underDev.html">Kopi Luwak</a>
+            <a href="underDev.html">Tas Koja</a>
+            <a href="underDev.html">Kain Songket</a>
+            <a href="underDev.html">Egg Roll Waluh</a>
+            <a href="shopping.html" class="see">Lihat Semua</a>
+          </div>
+
+          <div class="column">
+            <h3>Bagikan</h3>
+            <a
+              href="https://twitter.com/intent/tweet?url=%20https%3A%2F%2Ftraveline.web.app%2F&text=Bosen%20dirumah%20terus%3F%20Kuy%20Buka%20Traveline"
+              target="_blank"
+              >Twitter</a
+            >
+            <a
+              href="https://www.facebook.com/sharer/sharer.php?u=https://traveline.web.app/"
+              target="_blank"
+              >Facebook
+            </a>
+            <a
+              href="https://t.me/share/url?url=https%3A%2F%2Ftraveline.web.app%2F&text=Bosen%20dirumah%20terus%3F%20Kuy%20Buka%20Traveline%21"
+              target="_blank"
+              >Telegram
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?text=Bosen%20Dirumah%20Terus%3F%20Kuy%20Buka%20Traveline%20di%20https%3A%2F%2Ftraveline.web.app%2F"
+              target="_blank"
+              >Whatsapp
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="bottom">
-      Create with
-      <span><img src="assets/img/icon/ic_heart.svg" alt="Heart" /></span> by
-      TimPD
-    </div>
-  </footer>
+      <div class="bottom">
+        Create with
+        <span><img src="assets/img/icon/ic_heart.svg" alt="Heart" /></span> by
+        TimPD
+      </div>
+    </footer>
 
-  <!-- ============================== JS SCRIPT ============================== -->
-  <script src="assets/js/jquery-3.4.1.min.js"></script>
-  <script src="assets/js/navbar.js"></script>
-  <script src="assets/js/scrollAnimation.js"></script>
-</body>
-
+    <!-- ============================== JS SCRIPT ============================== -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/scrollAnimation.js"></script>
+  </body>
 </html>
