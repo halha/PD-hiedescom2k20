@@ -10,6 +10,16 @@ $(document).ready(() => {
     switch (input) {
       case 'malang':
         return (window.location.href = 'destination/malang.html');
+      case 'bali':
+        return (window.location.href = 'destination/bali.html');
+      case 'flores':
+        return (window.location.href = 'destination/flores.html');
+      case 'jakarta':
+        return (window.location.href = 'destination/jakarta.html');
+      case 'jogja':
+        return (window.location.href = 'underDev.html');
+      case 'yogyakarta':
+        return (window.location.href = 'underDev.html');
       case 'surabaya':
         return (window.location.href = 'destination/surabaya.html');
       default:
