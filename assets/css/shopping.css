@@ -168,22 +168,32 @@ p.desc {
   width: 100%;
 }
 
-#sec2.container .bg.bg-0 {
-  right: 0;
-  top: 34%;
-  width: 20%;
+/* ====================================== SECTION 3 ====================================== */
+#sec3.container {
+  padding-bottom: 200px;
 }
 
-#sec2.container .bg.bg-1 {
+/* ============================ S3  BACKGROUND ============================ */
+#sec3.container .bg {
+  position: absolute;
+  z-index: -1;
+}
+
+#sec3.container .bg.bg-1 {
   left: 0;
-  top: 65%;
+  top: 15%;
   width: 20%;
 }
 
-#sec2.container .bg.bg-2 {
-  top: 97%;
+#sec3.container .bg.bg-2 {
+  bottom: -3%;
   right: 0;
   width: 40%;
+}
+
+#sec3.container .bg img {
+  pointer-events: none;
+  width: 100%;
 }
 
 /* ==================================== SECTION 2 & 3 ==================================== */
@@ -303,19 +313,18 @@ p.desc {
     padding: 80px 0 50px;
   }
 
-  #sec1.container .bg.bg-0 {
+  #sec2.container .bg {
     width: 25%;
   }
 
-  #sec2.container .bg.bg-1 {
-    width: 30%;
+  /* ======================= SECTION 3 ======================= */
+  #sec3.container {
+    padding: 0 0 150px;
   }
 
-  #sec2.container .bg.bg-2 {
+  #sec3.container .bg.bg-1 {
     width: 30%;
-    top: 98%;
   }
-
 
   /* ===================== SECTION 3 & 4 ===================== */
   .container .content .card-box {
@@ -375,17 +384,17 @@ p.desc {
   }
 
   /* ======================= SECTION 2 ======================= */
-  #sec2.container .bg.bg-0 {
+  #sec2.container .bg {
     width: 40%;
   }
 
-  #sec2.container .bg.bg-1 {
+  /* ======================= SECTION 3 ======================= */
+  #sec3.container .bg.bg-1 {
     width: 45%;
   }
 
-  #sec2.container .bg.bg-2 {
+  #sec3.container .bg.bg-2 {
     width: 70%;
-    top: 98%;
   }
 
   /* ===================== SECTION 3 & 4 ===================== */
