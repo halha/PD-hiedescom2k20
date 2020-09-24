@@ -35,7 +35,7 @@ Web [Traveline](https://traveline.web.app) ini didevelop oleh Tim PD yang berang
 
 Web ini digunakan sebagai partisipasi lomba [Hiedescom 2k20](https://hiedescom.com/)
 
-### Downloading the source code
+### Download the source code
 
 Clone the repository:
 
