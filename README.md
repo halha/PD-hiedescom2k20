@@ -28,7 +28,7 @@ Selain 2 fitur utama tadi, [Traveliine](https://traveline.web.app) juga dapat di
 Web [Traveline](https://traveline.web.app) ini didevelop oleh Tim PD yang beranggotakan 3 orang
 
 - [Dimas Angkasa Nurindra](https://github.com/angkasa27) as Hustler
-- [Hammam Al-Hakim](https://github.com/halha) as Hackker
+- [Hammam Al-Hakim](https://github.com/halha) as Hacker
 - [Maulana Hilmi Arkan](https://github.com/arknmaulana) as Hipster
 
 ## Important Note
