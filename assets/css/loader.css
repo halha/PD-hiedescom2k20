@@ -13,8 +13,8 @@
 
 .loader-container .loader {
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 104px;
+  height: 104px;
 }
 
 .loader-container .loader span {
@@ -43,10 +43,12 @@
   0% {
     transform: scale(0);
   }
+
   10% {
-    transform: scale(1.2);
+    transform: scale(1);
   }
-  80%,
+
+  60%,
   100% {
     transform: scale(0);
   }
@@ -66,6 +68,7 @@
   0% {
     transform: rotate(10deg);
   }
+
   100% {
     transform: rotate(370deg);
   }
@@ -73,12 +76,12 @@
 
 .loader-container .loader .icon::before {
   content: url('../img/icon/ic_plane.svg');
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 30px;
   position: absolute;
   top: 80px;
   left: 85px;
-  transform: rotate(135deg);
+  transform: rotate(118deg);
 }
 
 .loader-container.complete {
