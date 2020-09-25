@@ -1,371 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jakarta | Traveline</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/img/Logo.svg"
+      sizes="96x96"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jakarta | Traveline</title>
-  <link rel="icon" type="image/png" href="../assets/img/Logo.svg" sizes="96x96" />
+    <!-- ================================= CSS ================================= -->
+    <link rel="stylesheet" href="../assets/css/navbar.css" />
+    <link rel="stylesheet" href="../assets/css/loader.css" />
+    <link rel="stylesheet" href="../assets/css/city.css" />
+    <link rel="stylesheet" href="../assets/css/scrollAnimation.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <style>
+      .bg1 {
+        background-image: url('../assets/img/city/Jakarta/foto_utama-foto_kartu.jpg');
+      }
+    </style>
 
-  <!-- ================================= CSS ================================= -->
-  <link rel="stylesheet" href="../assets/css/navbar.css" />
-  <link rel="stylesheet" href="../assets/css/city.css" />
-  <link rel="stylesheet" href="../assets/css/scrollAnimation.css" />
-  <link rel="stylesheet" href="../assets/css/footer.css" />
-  <style>
-    .bg1 {
-      background-image: url('../assets/img/city/Jakarta/foto_utama-foto_kartu.jpg');
-    }
-  </style>
-</head>
+    <!-- ============================= INITIAL  JS ============================= -->
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/loader.js"></script>
+  </head>
 
-<body>
-  <!-- ==============================  NAVBAR ============================== -->
-  <nav>
-    <a href="../index.html" class="logo">
-      <div class="logo-icon">
-        <img src="../assets/img/Logo.svg" alt="Traveline" />
-      </div>
-      <span>Traveline</span>
-    </a>
-
-    <div class="show white"></div>
-
-    <ul class="primary">
-      <div>
-        <li><a href="../index.html">Beranda</a></li>
-        <li>
-          <a href="../index.html#sec3" class="active">Destinasi</a>
-        </li>
-        <li>
-          <a href="../shopping.html">Belanja</a>
-        </li>
-        <li>
-          <a href="../about.html">Tentang</a>
-        </li>
-      </div>
-      <span class="hide black">x</span>
-    </ul>
-  </nav>
-
-  <!-- ============================== SECTION 1 ============================== -->
-  <section id="sec1" class="container">
-    <div class="content">
-      <div class="city-logo play fadeIn">
-        <img src="../assets/img/city/Jakarta/Coat_of_arms_of_Jakarta.svg" alt="logo_jakarta" />
-      </div>
-      <div class="desc play fadeInRight delay2">
-        <h1 class="title">DKI Jakarta</h1>
-        <p>
-          ja.kar.ta
-          <span>(n) Ibu Kota Negara Indonesia</span>
-        </p>
+  <body>
+    <!-- =============================== LOADER =============================== -->
+    <div class="loader-container">
+      <div class="loader">
+        <span style="--i: 1"></span>
+        <span style="--i: 2"></span>
+        <span style="--i: 3"></span>
+        <span style="--i: 4"></span>
+        <span style="--i: 5"></span>
+        <span style="--i: 6"></span>
+        <span style="--i: 7"></span>
+        <span style="--i: 8"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 12"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 14"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 17"></span>
+        <span style="--i: 18"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 20"></span>
+        <div class="icon"></div>
       </div>
     </div>
 
-    <a href="#sec2" class="arrow">
-      <img class="play delay4 fadeInUp" src="../assets/img/icon/ic_arrow-white.svg" alt="ic_arrow-white" />
-    </a>
-
-    <div class="bg1"></div>
-  </section>
-
-  <!-- ============================== SECTION 2 ============================== -->
-  <section id="sec2" class="container">
-    <div class="content">
-      <h2 class="title onScroll fadeInLeft hidden">Deskripsi Singkat</h2>
-      <div>
-        <div class="map onScroll fadeIn hidden">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253840.48788409328!2d106.68943157639848!3d-6.229728026093449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1600879551539!5m2!1sen!2sid"
-            width="400" height="300" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
-        </div>
-        <div class="text onScroll fadeInRight delay2 hidden">
-          <p>
-            Daerah Khusus Ibukota Jakarta (DKI Jakarta) adalah ibu kota negara
-            dan kota terbesar di Indonesia. Jakarta merupakan satu-satunya
-            kota di Indonesia yang memiliki status setingkat provinsi. Jakarta
-            terletak di pesisir bagian barat laut Pulau Jawa. Dahulu pernah
-            dikenal dengan beberapa nama di antaranya Sunda Kelapa, Jayakarta,
-            dan Batavia. Di dunia internasional Jakarta juga mempunyai julukan
-            J-Town, atau lebih populer lagi The Big Durian karena dianggap
-            kota yang sebanding New York City (Big Apple) di Indonesia.
-          </p>
-          <p>
-            Wilayah metropolitan Jakarta (Jabodetabek) yang berpenduduk
-            sekitar 28 juta jiwa, merupakan metropolitan terbesar di Asia
-            Tenggara atau urutan kedua di dunia.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="bg">
-      <img src="../assets/img/illustration/illu_city_right.svg" alt="illu_city_right" />
-    </div>
-  </section>
-
-  <!-- ============================== SECTION 3 ============================== -->
-  <section id="sec3" class="container">
-    <div class="slides">
-      <div id="slide-1">
-        <img src="../assets/img/city/Jakarta/galeri-kota_tua.jpg" alt="galeri-kota_tua" />
-
-        <div class="location">
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31735.974378921044!2d106.82224897356998!3d-6.131131215882026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f607534bb7c7%3A0x42eab7e4f2537065!2sKota%20Tua%2C%20Mangga%20Besar%2C%20Taman%20Sari%2C%20West%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1600879750572!5m2!1sen!2sid"
-              width="400" height="300" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
-              tabindex="0"></iframe>
-          </div>
-          <h3>Kota Tua</h3>
-        </div>
-      </div>
-
-      <div id="slide-2">
-        <img src="../assets/img/city/Jakarta/galeri-lapangan_monas.jpg" alt="galeri-lapangan_monas" />
-
-        <div class="location">
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6664270097594!2d106.82496411485432!3d-6.1753923955291965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sNational%20Monument!5e0!3m2!1sen!2sid!4v1600879852413!5m2!1sen!2sid"
-              width="400" height="300" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
-              tabindex="0"></iframe>
-          </div>
-          <h3>Lapangan Monas</h3>
-        </div>
-      </div>
-
-      <div id="slide-3">
-        <img src="../assets/img/city/Jakarta/galeri-seberang_menara_astra.jpg" alt="galeri-seberang_menara_astra" />
-
-        <div class="location">
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.6068851687353!2d106.82132722936095!3d-6.207201199999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4033a671c4b%3A0x612c9d41a98963ef!2sMenara%20Astra!5e0!3m2!1sid!2sid!4v1600921338719!5m2!1sid!2sid"
-              width="80" height="80" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
-              tabindex="0"></iframe>
-          </div>
-          <h3>Seberang Menara Astra</h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="thumb">
-      <a href="#slide-1" class="onScroll fadeIn hidden">
-        <img src="../assets/img/city/Jakarta/galeri-kota_tua.jpg" alt="galeri-kota_tua" />
-      </a>
-      <a href="#slide-2" class="onScroll fadeIn delay1 hidden">
-        <img src="../assets/img/city/Jakarta/galeri-lapangan_monas.jpg" alt="galeri-lapangan_monas" />
-      </a>
-      <a href="#slide-3" class="onScroll fadeIn delay2 hidden">
-        <img src="../assets/img/city/Jakarta/galeri-seberang_menara_astra.jpg" alt="galeri-seberang_menara_astra" /></a>
-    </div>
-  </section>
-
-  <!-- ============================== SECTION 4 ============================== -->
-  <section id="sec4" class="container">
-    <div class="content">
-      <h2 class="title onScroll fadeInRight hidden">
-        Tempat menarik di Jakarta
-      </h2>
-
-      <div class="card-box">
-        <a href="https://goo.gl/maps/bMjuTDvrRxgX6RMQA" class="card onScroll flip delay1 hidden">
-          <div class="img-box">
-            <img src="../assets/img/city/Jakarta/tempat_menarik-gelora_bung_karno.jpg"
-              alt="tempat_menarik-gelora_bung_karno" />
-          </div>
-
-          <h3>Gelora Bung Karno</h3>
-
-          <div class="detail">
-            <p>
-              Stadion serbaguna yang merupakan bagian dari kompleks
-              olahraga Gelanggang Olahraga Bung Karno.
-            </p>
-            <p class="button">Selengkapnya</p>
-          </div>
-        </a>
-
-        <a href="https://goo.gl/maps/sxs4jpipd1MTKJrG7" class="card onScroll flip delay2 hidden">
-          <div class="img-box">
-            <img src="../assets/img/city/Jakarta/tempat_menarik-kota_tua.jpg" alt="tempat_menarik-kota_tua" />
-          </div>
-
-          <h3>Kota Tua</h3>
-
-          <div class="detail">
-            <p>
-              Juga dikenal dengan sebutan Batavia Lama (Old
-              Batavia), adalah sebuah wilayah kecil di Jakarta, Indonesia.
-            </p>
-            <p class="button">Selengkapnya</p>
-          </div>
-        </a>
-
-        <a href="https://goo.gl/maps/pmA3iGMTo5zEKMRK6" class="card onScroll flip delay3 hidden">
-          <div class="img-box">
-            <img src="../assets/img/city/Jakarta/tempat_menarik-monumen_selamat_datang.jpg"
-              alt="tempat_menarik-monumen_selamat_datang" />
-          </div>
-
-          <h3>Monumen Selamat Datang</h3>
-
-          <div class="detail">
-            <p>
-              Sebuah monumen yang terletak di
-              tengah Bundaran Hotel Indonesia, Jakarta.
-            </p>
-            <p class="button">Selengkapnya</p>
-          </div>
-        </a>
-
-        <span>/ dummy tag /</span>
-      </div>
-    </div>
-
-    <div class="bg">
-      <img src="../assets/img/illustration/illu_tree_left.svg" alt="illu_tree_left" />
-    </div>
-  </section>
-
-  <!-- ============================== SECTION 5 ============================== -->
-  <section id="sec5" class="container">
-    <div class="content">
-      <h2 class="title onScroll fadeInLeft hidden">
-        Produk lokal khas Jakarta
-      </h2>
-      <div class="card-box">
-        <div class="card onScroll fadeIn delay1 hidden">
-          <div class="img-box">
-            <img src="../assets/img/city/Jakarta/kerak_telor.jpg" alt="Kerak Telor" />
-          </div>
-
-          <div class="detail">
-            <h3>Kerak Telor</h3>
-            <p>
-              Kerak telur adalah makanan asli daerah Jakarta (Betawi), dengan
-              bahan-bahan beras ketan putih, telur ayam atau bebek, ebi yang
-              disangrai kering
-            </p>
-
-            <div class="bot">
-              <h4>Rp10000+</h4>
-              <a href="https://wa.me/6285155335811?text=Hai%20kak%2C%20Saya%20ingin%20memesan%20produk%20dari%20Traveline" class="button">Pesan</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card onScroll fadeIn delay2 hidden">
-          <div class="img-box">
-            <img src="../assets/img/city/Jakarta/roti_buaya.jpg" alt="Roti Buaya" />
-          </div>
-
-          <div class="detail">
-            <h3>Roti Buaya</h3>
-            <p>
-              Memiliki panjang sekitar 50 cm ini dibawa oleh mempelai
-              laki-laki untuk diberikan kepada pengantin wanita di dalam
-              pernikahan atau lamaran di pernikahan adat Betawi.
-            </p>
-
-            <div class="bot">
-              <h4>Rp90000+</h4>
-              <a href="https://wa.me/6285155335811?text=Hai%20kak%2C%20Saya%20ingin%20memesan%20produk%20dari%20Traveline" class="button">Pesan</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card onScroll fadeIn delay3 hidden">
-          <div class="img-box">
-            <img src="../assets/img/city/Jakarta/semur_jengkol.jpg" alt="Semur Jengkol" />
-          </div>
-
-          <div class="detail">
-            <h3>Semur Jengkol</h3>
-            <p>
-              Semur berasal dari bahasa Belanda yaitu kata "Smoor" yang
-              artinya masakan itu telah direbus dengan tomat dan bawang secara
-              perlahan-lahan
-            </p>
-
-            <div class="bot">
-              <h4>Rp32000+</h4>
-              <a href="https://wa.me/6285155335811?text=Hai%20kak%2C%20Saya%20ingin%20memesan%20produk%20dari%20Traveline" class="button">Pesan</a>
-            </div>
-          </div>
-        </div>
-
-        <span>/ dummy tag /</span>
-      </div>
-    </div>
-
-    <div class="bg">
-      <img src="../assets/img/illustration/illu_footer_above.svg" alt="illu_footer_above" />
-    </div>
-  </section>
-
-  <!-- =============================== FOOTER =============================== -->
-  <footer>
-    <div class="top">
-      <div class="left">
-        <a href="index.html" class="logo">
+    <!-- ==============================  NAVBAR ============================== -->
+    <nav>
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">
           <img src="../assets/img/Logo.svg" alt="Traveline" />
-          <h3>Traveline</h3>
+        </div>
+        <span>Traveline</span>
+      </a>
+
+      <div class="show white"></div>
+
+      <ul class="primary">
+        <div>
+          <li><a href="../index.html">Beranda</a></li>
+          <li>
+            <a href="../index.html#sec3" class="active">Destinasi</a>
+          </li>
+          <li>
+            <a href="../shopping.html">Belanja</a>
+          </li>
+          <li>
+            <a href="../about.html">Tentang</a>
+          </li>
+        </div>
+        <span class="hide black">x</span>
+      </ul>
+    </nav>
+
+    <!-- ============================== SECTION 1 ============================== -->
+    <section id="sec1" class="container">
+      <div class="content">
+        <div class="city-logo play fadeIn">
+          <img
+            src="../assets/img/city/Jakarta/Coat_of_arms_of_Jakarta.svg"
+            alt="logo_jakarta"
+          />
+        </div>
+        <div class="desc play fadeInRight delay2">
+          <h1 class="title">DKI Jakarta</h1>
+          <p>
+            ja.kar.ta
+            <span>(n) Ibu Kota Negara Indonesia</span>
+          </p>
+        </div>
+      </div>
+
+      <a href="#sec2" class="arrow">
+        <img
+          class="play delay4 fadeInUp"
+          src="../assets/img/icon/ic_arrow-white.svg"
+          alt="ic_arrow-white"
+        />
+      </a>
+
+      <div class="bg1"></div>
+    </section>
+
+    <!-- ============================== SECTION 2 ============================== -->
+    <section id="sec2" class="container">
+      <div class="content">
+        <h2 class="title onScroll fadeInLeft hidden">Deskripsi Singkat</h2>
+        <div>
+          <div class="map onScroll fadeIn hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253840.48788409328!2d106.68943157639848!3d-6.229728026093449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1600879551539!5m2!1sen!2sid"
+              width="400"
+              height="300"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+          <div class="text onScroll fadeInRight delay2 hidden">
+            <p>
+              Daerah Khusus Ibukota Jakarta (DKI Jakarta) adalah ibu kota negara
+              dan kota terbesar di Indonesia. Jakarta merupakan satu-satunya
+              kota di Indonesia yang memiliki status setingkat provinsi. Jakarta
+              terletak di pesisir bagian barat laut Pulau Jawa. Dahulu pernah
+              dikenal dengan beberapa nama di antaranya Sunda Kelapa, Jayakarta,
+              dan Batavia. Di dunia internasional Jakarta juga mempunyai julukan
+              J-Town, atau lebih populer lagi The Big Durian karena dianggap
+              kota yang sebanding New York City (Big Apple) di Indonesia.
+            </p>
+            <p>
+              Wilayah metropolitan Jakarta (Jabodetabek) yang berpenduduk
+              sekitar 28 juta jiwa, merupakan metropolitan terbesar di Asia
+              Tenggara atau urutan kedua di dunia.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg">
+        <img
+          src="../assets/img/illustration/illu_city_right.svg"
+          alt="illu_city_right"
+        />
+      </div>
+    </section>
+
+    <!-- ============================== SECTION 3 ============================== -->
+    <section id="sec3" class="container">
+      <div class="slides">
+        <div id="slide-1">
+          <img
+            src="../assets/img/city/Jakarta/galeri-kota_tua.jpg"
+            alt="galeri-kota_tua"
+          />
+
+          <div class="location">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31735.974378921044!2d106.82224897356998!3d-6.131131215882026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f607534bb7c7%3A0x42eab7e4f2537065!2sKota%20Tua%2C%20Mangga%20Besar%2C%20Taman%20Sari%2C%20West%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1600879750572!5m2!1sen!2sid"
+                width="400"
+                height="300"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+            <h3>Kota Tua</h3>
+          </div>
+        </div>
+
+        <div id="slide-2">
+          <img
+            src="../assets/img/city/Jakarta/galeri-lapangan_monas.jpg"
+            alt="galeri-lapangan_monas"
+          />
+
+          <div class="location">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6664270097594!2d106.82496411485432!3d-6.1753923955291965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sNational%20Monument!5e0!3m2!1sen!2sid!4v1600879852413!5m2!1sen!2sid"
+                width="400"
+                height="300"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+            <h3>Lapangan Monas</h3>
+          </div>
+        </div>
+
+        <div id="slide-3">
+          <img
+            src="../assets/img/city/Jakarta/galeri-seberang_menara_astra.jpg"
+            alt="galeri-seberang_menara_astra"
+          />
+
+          <div class="location">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.6068851687353!2d106.82132722936095!3d-6.207201199999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4033a671c4b%3A0x612c9d41a98963ef!2sMenara%20Astra!5e0!3m2!1sid!2sid!4v1600921338719!5m2!1sid!2sid"
+                width="80"
+                height="80"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+            <h3>Seberang Menara Astra</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="thumb">
+        <a href="#slide-1" class="onScroll fadeIn hidden">
+          <img
+            src="../assets/img/city/Jakarta/galeri-kota_tua.jpg"
+            alt="galeri-kota_tua"
+          />
         </a>
-        <p>
-          Jelajahi nusantara dan rasakah produk juga jajanan lokal dari rumah
-          saja
-        </p>
+        <a href="#slide-2" class="onScroll fadeIn delay1 hidden">
+          <img
+            src="../assets/img/city/Jakarta/galeri-lapangan_monas.jpg"
+            alt="galeri-lapangan_monas"
+          />
+        </a>
+        <a href="#slide-3" class="onScroll fadeIn delay2 hidden">
+          <img
+            src="../assets/img/city/Jakarta/galeri-seberang_menara_astra.jpg"
+            alt="galeri-seberang_menara_astra"
+        /></a>
       </div>
-      <div class="right">
-        <div class="column">
-          <h3>Destinasi</h3>
-          <a href="malang.html">Malang</a>
-          <a href="surabaya.html">Surabaya</a>
-          <a href="flores.html">Flores</a>
-          <a href="jakarta.html">Jakarta</a>
-          <a href="../index.html#sec3" class="see">Lihat Semua</a>
-        </div>
+    </section>
 
-        <div class="column">
-          <h3>Produk Lokal</h3>
-          <a href="../shopping.html">Kerak Telor</a>
-          <a href="../shopping.html">Cwie Mie</a>
-          <a href="../shopping.html">Tum Ayam</a>
-          <a href="../shopping.html">Jagung Bose</a>
-          <a href="../shopping.html" class="see">Lihat Semua</a>
-        </div>
+    <!-- ============================== SECTION 4 ============================== -->
+    <section id="sec4" class="container">
+      <div class="content">
+        <h2 class="title onScroll fadeInRight hidden">
+          Tempat menarik di Jakarta
+        </h2>
 
-        <div class="column">
-          <h3>Bagikan</h3>
-          <a href="https://twitter.com/intent/tweet?url=%20https%3A%2F%2Ftraveline.web.app%2F&text=Bosen%20dirumah%20terus%3F%20Kuy%20Buka%20Traveline"
-            target="_blank">Twitter</a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://traveline.web.app/" target="_blank">Facebook
+        <div class="card-box">
+          <a
+            href="https://goo.gl/maps/bMjuTDvrRxgX6RMQA"
+            class="card onScroll flip delay1 hidden"
+          >
+            <div class="img-box">
+              <img
+                src="../assets/img/city/Jakarta/tempat_menarik-gelora_bung_karno.jpg"
+                alt="tempat_menarik-gelora_bung_karno"
+              />
+            </div>
+
+            <h3>Gelora Bung Karno</h3>
+
+            <div class="detail">
+              <p>
+                Stadion serbaguna yang merupakan bagian dari kompleks olahraga
+                Gelanggang Olahraga Bung Karno.
+              </p>
+              <p class="button">Selengkapnya</p>
+            </div>
           </a>
-          <a href="https://t.me/share/url?url=https%3A%2F%2Ftraveline.web.app%2F&text=Bosen%20dirumah%20terus%3F%20Kuy%20Buka%20Traveline%21"
-            target="_blank">Telegram
+
+          <a
+            href="https://goo.gl/maps/sxs4jpipd1MTKJrG7"
+            class="card onScroll flip delay2 hidden"
+          >
+            <div class="img-box">
+              <img
+                src="../assets/img/city/Jakarta/tempat_menarik-kota_tua.jpg"
+                alt="tempat_menarik-kota_tua"
+              />
+            </div>
+
+            <h3>Kota Tua</h3>
+
+            <div class="detail">
+              <p>
+                Juga dikenal dengan sebutan Batavia Lama (Old Batavia), adalah
+                sebuah wilayah kecil di Jakarta, Indonesia.
+              </p>
+              <p class="button">Selengkapnya</p>
+            </div>
           </a>
-          <a href="https://api.whatsapp.com/send?text=Bosen%20Dirumah%20Terus%3F%20Kuy%20Buka%20Traveline%20di%20https%3A%2F%2Ftraveline.web.app%2F"
-            target="_blank">Whatsapp
+
+          <a
+            href="https://goo.gl/maps/pmA3iGMTo5zEKMRK6"
+            class="card onScroll flip delay3 hidden"
+          >
+            <div class="img-box">
+              <img
+                src="../assets/img/city/Jakarta/tempat_menarik-monumen_selamat_datang.jpg"
+                alt="tempat_menarik-monumen_selamat_datang"
+              />
+            </div>
+
+            <h3>Monumen Selamat Datang</h3>
+
+            <div class="detail">
+              <p>
+                Sebuah monumen yang terletak di tengah Bundaran Hotel Indonesia,
+                Jakarta.
+              </p>
+              <p class="button">Selengkapnya</p>
+            </div>
           </a>
+
+          <span>/ dummy tag /</span>
         </div>
       </div>
-    </div>
 
-    <div class="bottom">
-      Create with
-      <span><img src="../assets/img/icon/ic_heart.svg" alt="Heart" /></span> by
-      TimPD
-    </div>
-  </footer>
+      <div class="bg">
+        <img
+          src="../assets/img/illustration/illu_tree_left.svg"
+          alt="illu_tree_left"
+        />
+      </div>
+    </section>
 
-  <!-- ============================== JS SCRIPT ============================== -->
-  <script src="../assets/js/jquery-3.4.1.min.js"></script>
-  <script src="../assets/js/navbar.js"></script>
-  <script src="../assets/js/scrollAnimation.js"></script>
-</body>
+    <!-- ============================== SECTION 5 ============================== -->
+    <section id="sec5" class="container">
+      <div class="content">
+        <h2 class="title onScroll fadeInLeft hidden">
+          Produk lokal khas Jakarta
+        </h2>
+        <div class="card-box">
+          <div class="card onScroll fadeIn delay1 hidden">
+            <div class="img-box">
+              <img
+                src="../assets/img/city/Jakarta/kerak_telor.jpg"
+                alt="Kerak Telor"
+              />
+            </div>
 
+            <div class="detail">
+              <h3>Kerak Telor</h3>
+              <p>
+                Kerak telur adalah makanan asli daerah Jakarta (Betawi), dengan
+                bahan-bahan beras ketan putih, telur ayam atau bebek, ebi yang
+                disangrai kering
+              </p>
+
+              <div class="bot">
+                <h4>Rp10000+</h4>
+                <a
+                  href="https://wa.me/6285155335811?text=Hai%20kak%2C%20Saya%20ingin%20memesan%20produk%20dari%20Traveline"
+                  class="button"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card onScroll fadeIn delay2 hidden">
+            <div class="img-box">
+              <img
+                src="../assets/img/city/Jakarta/roti_buaya.jpg"
+                alt="Roti Buaya"
+              />
+            </div>
+
+            <div class="detail">
+              <h3>Roti Buaya</h3>
+              <p>
+                Memiliki panjang sekitar 50 cm ini dibawa oleh mempelai
+                laki-laki untuk diberikan kepada pengantin wanita di dalam
+                pernikahan atau lamaran di pernikahan adat Betawi.
+              </p>
+
+              <div class="bot">
+                <h4>Rp90000+</h4>
+                <a
+                  href="https://wa.me/6285155335811?text=Hai%20kak%2C%20Saya%20ingin%20memesan%20produk%20dari%20Traveline"
+                  class="button"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card onScroll fadeIn delay3 hidden">
+            <div class="img-box">
+              <img
+                src="../assets/img/city/Jakarta/semur_jengkol.jpg"
+                alt="Semur Jengkol"
+              />
+            </div>
+
+            <div class="detail">
+              <h3>Semur Jengkol</h3>
+              <p>
+                Semur berasal dari bahasa Belanda yaitu kata "Smoor" yang
+                artinya masakan itu telah direbus dengan tomat dan bawang secara
+                perlahan-lahan
+              </p>
+
+              <div class="bot">
+                <h4>Rp32000+</h4>
+                <a
+                  href="https://wa.me/6285155335811?text=Hai%20kak%2C%20Saya%20ingin%20memesan%20produk%20dari%20Traveline"
+                  class="button"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <span>/ dummy tag /</span>
+        </div>
+      </div>
+
+      <div class="bg">
+        <img
+          src="../assets/img/illustration/illu_footer_above.svg"
+          alt="illu_footer_above"
+        />
+      </div>
+    </section>
+
+    <!-- =============================== FOOTER =============================== -->
+    <footer>
+      <div class="top">
+        <div class="left">
+          <a href="index.html" class="logo">
+            <img src="../assets/img/Logo.svg" alt="Traveline" />
+            <h3>Traveline</h3>
+          </a>
+          <p>
+            Jelajahi nusantara dan rasakah produk juga jajanan lokal dari rumah
+            saja
+          </p>
+        </div>
+        <div class="right">
+          <div class="column">
+            <h3>Destinasi</h3>
+            <a href="malang.html">Malang</a>
+            <a href="surabaya.html">Surabaya</a>
+            <a href="flores.html">Flores</a>
+            <a href="jakarta.html">Jakarta</a>
+            <a href="../index.html#sec3" class="see">Lihat Semua</a>
+          </div>
+
+          <div class="column">
+            <h3>Produk Lokal</h3>
+            <a href="../shopping.html">Kerak Telor</a>
+            <a href="../shopping.html">Cwie Mie</a>
+            <a href="../shopping.html">Tum Ayam</a>
+            <a href="../shopping.html">Jagung Bose</a>
+            <a href="../shopping.html" class="see">Lihat Semua</a>
+          </div>
+
+          <div class="column">
+            <h3>Bagikan</h3>
+            <a
+              href="https://twitter.com/intent/tweet?url=%20https%3A%2F%2Ftraveline.web.app%2F&text=Bosen%20dirumah%20terus%3F%20Kuy%20Buka%20Traveline"
+              target="_blank"
+              >Twitter</a
+            >
+            <a
+              href="https://www.facebook.com/sharer/sharer.php?u=https://traveline.web.app/"
+              target="_blank"
+              >Facebook
+            </a>
+            <a
+              href="https://t.me/share/url?url=https%3A%2F%2Ftraveline.web.app%2F&text=Bosen%20dirumah%20terus%3F%20Kuy%20Buka%20Traveline%21"
+              target="_blank"
+              >Telegram
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?text=Bosen%20Dirumah%20Terus%3F%20Kuy%20Buka%20Traveline%20di%20https%3A%2F%2Ftraveline.web.app%2F"
+              target="_blank"
+              >Whatsapp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        Create with
+        <span><img src="../assets/img/icon/ic_heart.svg" alt="Heart" /></span>
+        by TimPD
+      </div>
+    </footer>
+
+    <!-- ============================== JS SCRIPT ============================== -->
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/scrollAnimation.js"></script>
+  </body>
 </html>
