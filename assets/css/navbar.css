@@ -35,6 +35,8 @@
 body {
   background: var(--primary-bg);
   z-index: -5;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* ====================================== SCROLLBAR ====================================== */
