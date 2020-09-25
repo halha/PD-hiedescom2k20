@@ -1,7 +1,7 @@
-$(window).on('load', function () {
-  $('body').css({
-    overflow: 'auto',
-  });
+// $(window).on('load', function () {
+//   $('body').css({
+//     overflow: 'auto',
+//   });
 
-  $('.loader-container').addClass('complete');
-});
+//   $('.loader-container').addClass('complete');
+// });
