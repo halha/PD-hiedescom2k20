@@ -54,39 +54,63 @@ body::-webkit-scrollbar-thumb {
 nav {
   background: var(--primary-bg);
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 70px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   left: 0;
   padding: 15px 100px;
   position: absolute;
   top: 0;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 100%;
   z-index: 99;
 }
 
 nav.fixed {
+  -webkit-animation: show 0.3s;
   animation: show 0.3s;
   position: fixed !important;
 }
 
 /* ======================= ANIMATION ======================= */
-@keyframes show {
+@-webkit-keyframes show {
   0% {
+    -webkit-transform: translateY(-70px);
     transform: translateY(-70px);
   }
 
   100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes show {
+  0% {
+    -webkit-transform: translateY(-70px);
+    transform: translateY(-70px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
 
 /* ================================== LOGO ================================== */
 nav .logo {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: var(--grey-100);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  font-size: 32px;
   font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
@@ -122,7 +146,7 @@ nav .show:after {
   position: absolute;
 }
 
-nav .show::before {
+nav .show:before {
   top: -12px;
   width: 100%;
 }
@@ -133,14 +157,16 @@ nav .show:after {
 }
 
 nav .show.black,
-nav .show.black::before,
-nav .show.black::after {
+nav .show.black:before,
+nav .show.black:after {
   background: var(--grey-100);
 }
 
 /* ================================ NAV  ITEM ================================ */
 nav ul,
 nav ul div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -153,11 +179,13 @@ nav ul div li {
 nav ul div li a {
   color: var(--grey-80);
   display: inline-block;
+  font-size: 18px;
   font-size: 1.125rem;
   padding: 0 5px;
   position: relative;
   text-decoration: none;
   text-transform: capitalize;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -171,6 +199,7 @@ nav ul div li a.active {
 }
 
 nav ul .hide {
+  font-size: 40px;
   font-size: 2.5rem;
 }
 
@@ -181,6 +210,7 @@ nav ul .hide.black {
 /* ================================ HIDE SHOW ================================ */
 nav .show,
 nav ul .hide {
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   display: none;
 }
@@ -209,6 +239,7 @@ nav ul .hide {
     right: -100%;
     text-align: center;
     top: 0;
+    -webkit-transition: 0.7s;
     transition: 0.7s;
     width: 100%;
     z-index: 999;
@@ -223,6 +254,7 @@ nav ul .hide {
     left: 50%;
     position: absolute;
     top: 50%;
+    -webkit-transform: translate(-52.5%, -80%);
     transform: translate(-52.5%, -80%);
     width: 100%;
   }

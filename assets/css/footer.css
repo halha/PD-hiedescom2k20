@@ -9,8 +9,14 @@ footer {
 
 /* ================================= TOP ================================= */
 footer .top {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -21,7 +27,11 @@ footer .top .right {
 
 /* ======================= TOP  LEFT ======================= */
 footer .top .left .logo {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
   text-decoration: none;
@@ -29,6 +39,7 @@ footer .top .left .logo {
 
 footer .top .left .logo img {
   box-shadow: 0px 20px 26px -15px rgba(0, 0, 0, 0.3);
+  height: 44px;
   height: 2.75rem;
   margin-right: 22px;
   pointer-events: none;
@@ -36,12 +47,14 @@ footer .top .left .logo img {
 
 footer .top .left .logo h3 {
   color: var(--blue-dark-100);
+  font-size: 44px;
   font-size: 2.75rem;
   font-weight: 800;
 }
 
 footer .top .left p {
   color: var(--blue-dark-80);
+  font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.5;
   width: 60%;
@@ -49,8 +62,13 @@ footer .top .left p {
 
 /* ======================= TOP RIGHT ======================= */
 footer .top .right {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
@@ -60,6 +78,7 @@ footer .top .right .column * {
 
 footer .top .right .column h3 {
   color: var(--blue-dark-100);
+  font-size: 24px;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.5;
@@ -67,8 +86,10 @@ footer .top .right .column h3 {
 
 footer .top .right .column a {
   display: block;
+  font-size: 14px;
   font-size: 0.875rem;
   text-decoration: none;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -87,22 +108,30 @@ footer .top .right .column a:last-child {
 
 /* ================================ BOTTOM ================================ */
 footer .bottom {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  font-size: 18px;
   font-size: 1.125rem;
   font-weight: 600;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding: 27px 0;
   position: relative;
 }
 
-footer .bottom::after {
+footer .bottom:after {
   content: '';
   background: var(--grey-40);
   height: 2px;
   left: 50%;
   position: absolute;
   top: 0;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 100%;
 }
@@ -146,6 +175,7 @@ footer .bottom span img {
 
   /* ========================== TOP ========================== */
   footer .top {
+    -ms-flex-flow: column;
     flex-flow: column;
   }
 
@@ -164,9 +194,16 @@ footer .bottom span img {
   }
 
   footer .top .right {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 

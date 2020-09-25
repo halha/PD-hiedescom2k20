@@ -10,6 +10,9 @@
 }
 
 .button {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
   align-items: center;
   background: var(--red-100);
   border-radius: 4px;
@@ -17,11 +20,13 @@
   display: block;
   box-sizing: border-box;
   font-weight: 800;
+  letter-spacing: 2.88px;
   letter-spacing: 0.18rem;
   padding: 9px 30px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 100%;
 }
@@ -33,6 +38,7 @@
 h1.title {
   color: var(--primary-color);
   font-family: 'Ubuntu', sans-serif;
+  font-size: 57.6px;
   font-size: 3.6rem;
   margin-bottom: 10px;
   text-transform: capitalize;
@@ -41,6 +47,7 @@ h1.title {
 h2.title {
   color: var(--primary-color);
   font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
   font-size: 2.5rem;
   margin: auto auto 62px auto;
   padding: 20px;
@@ -50,13 +57,14 @@ h2.title {
   width: 65%;
 }
 
-h2.title::after {
+h2.title:after {
   background: var(--primary-color);
   bottom: 0;
   content: '';
   height: 4px;
   left: 50%;
   position: absolute;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 100px;
 }
@@ -69,12 +77,19 @@ h2.title::after {
 /* ====================================== SECTION 1 ====================================== */
 /* ============================== S1 CONTENT ============================== */
 #sec1.container .content {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   left: 50%;
   position: absolute;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -103,10 +118,12 @@ h2.title::after {
 
 /* ============================== S1  ARROOW ============================== */
 #sec1.container .arrow {
+  -webkit-animation: up-down 2.5s infinite;
   animation: up-down 2.5s infinite;
   bottom: 10%;
   left: 48%;
   position: absolute;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -128,28 +145,49 @@ h2.title::after {
   z-index: -1;
 }
 
-#sec1.container .bg1::after {
+#sec1.container .bg1:after {
   background: var(--blue-dark-100);
   content: '';
+  filter: opacity(0.7);
   height: 100%;
   left: 0;
   opacity: 0.7;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=70)';
   position: absolute;
   top: 0;
   width: 100%;
 }
 
 /* ======================= ANIMATION ======================= */
-@keyframes up-down {
+@-webkit-keyframes up-down {
   0% {
+    -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
 
   50% {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
   100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+@keyframes up-down {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
 }
@@ -157,8 +195,14 @@ h2.title::after {
 /* ====================================== SECTION 2 ====================================== */
 /* ============================== S2 CONTENT ============================== */
 #sec2.container .content > div {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -182,6 +226,7 @@ h2.title::after {
 }
 
 #sec2.container .content div .text p {
+  font-size: 18px;
   font-size: 1.125rem;
   margin-bottom: 20px;
 }
@@ -210,9 +255,13 @@ h2.title::after {
 }
 
 #sec3.container .slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
+  -webkit-scroll-snap-type: x mandatory;
+  -ms-scroll-snap-type: x mandatory;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
@@ -224,13 +273,20 @@ h2.title::after {
 #sec3.container .slides > div {
   position: relative;
   scroll-snap-align: start;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
   height: 100vh;
   background: silver;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 100px;
   overflow: hidden;
@@ -242,8 +298,12 @@ h2.title::after {
 }
 
 #sec3.container .slides div .location {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   right: 0;
@@ -266,6 +326,7 @@ h2.title::after {
 
 #sec3.container .slides div .location h3 {
   color: var(--white);
+  font-size: 24px;
   font-size: 1.5rem;
   font-weight: 600;
   text-align: left;
@@ -281,20 +342,28 @@ h2.title::after {
 }
 
 #sec3.container .thumb > a {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-radius: 10px;
   box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   height: 60px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-right: 10px;
   overflow: hidden;
   position: relative;
   width: 60px;
+  -webkit-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
 
 #sec3.container .thumb > a:hover {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -306,8 +375,13 @@ h2.title::after {
 /* ============================== S4 CONTENT ============================== */
 
 #sec4.container .content .card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: auto;
   width: 80%;
@@ -323,6 +397,7 @@ h2.title::after {
   position: relative;
   text-align: center;
   text-decoration: none;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
   width: 30%;
 }
@@ -339,6 +414,7 @@ h2.title::after {
   margin-bottom: 25px;
   overflow: hidden;
   position: relative;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
   width: 100%;
 }
@@ -353,17 +429,22 @@ h2.title::after {
   pointer-events: none;
   position: absolute;
   top: 0;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 #sec4.container .content .card-box .card h3 {
+  font-size: 24px;
   font-size: 1.5rem;
+  margin-bottom: 24px;
   margin-bottom: 1.5rem;
+  margin-top: 24px;
   margin-top: 1.5rem;
 }
 
 #sec4.container .content .card-box .card .detail p:first-child {
   color: var(--grey-60);
+  margin-bottom: 16px;
   margin-bottom: 1rem;
   text-align: left;
 }
@@ -389,7 +470,11 @@ h2.title::after {
 
 /* ============================== S5 CONTENT ============================== */
 #sec5.container .content .card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: auto;
   width: 90%;
@@ -400,11 +485,13 @@ h2.title::after {
   border-radius: 16px;
   box-shadow: 0px 0px 16px rgba(46, 60, 64, 0.4);
   overflow: hidden;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 30%;
 }
 
 #sec5.container .content .card-box .card:hover {
+  -webkit-transform: translateY(-20px);
   transform: translateY(-20px);
 }
 
@@ -421,30 +508,40 @@ h2.title::after {
   pointer-events: none;
   position: absolute;
   top: 0;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 #sec5.container .content .card-box .card .detail h3 {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
   font-size: 1.5rem;
   margin-bottom: 11px;
 }
 
 #sec5.container .content .card-box .card .detail p {
   color: var(--grey-60);
+  font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 23px;
 }
 
 #sec5.container .content .card-box .card .detail .bot {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 #sec5.container .content .card-box .card .detail .bot h4 {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
   font-size: 1.5rem;
 }
 
@@ -522,7 +619,10 @@ h2.title::after {
 
   #sec4.container .content .card-box {
     box-sizing: border-box;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: start;
     overflow-x: auto;
     padding: 50px;
@@ -534,6 +634,7 @@ h2.title::after {
   }
 
   #sec4.container .content .card-box .card {
+    -ms-flex-negative: 0;
     flex-shrink: 0;
     height: auto;
     margin-right: 30px;
@@ -568,7 +669,10 @@ h2.title::after {
 
   #sec5.container .content .card-box {
     box-sizing: border-box;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: start;
     overflow-x: auto;
     padding: 50px;
@@ -580,6 +684,7 @@ h2.title::after {
   }
 
   #sec5.container .content .card-box .card {
+    -ms-flex-negative: 0;
     flex-shrink: 0;
     height: auto;
     margin-right: 30px;
@@ -617,6 +722,7 @@ h2.title::after {
 
   /* ======================= SECTION 1 ======================= */
   #sec1.container .content {
+    -ms-flex-flow: column;
     flex-flow: column;
     text-align: center;
   }
@@ -627,6 +733,7 @@ h2.title::after {
 
   /* ======================= SECTION 2 ======================= */
   #sec2.container .content > div {
+    -ms-flex-flow: column;
     flex-flow: column;
   }
 

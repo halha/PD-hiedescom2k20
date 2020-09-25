@@ -12,6 +12,7 @@
 h1.title {
   color: #ee6a51;
   font-family: 'Ubuntu', sans-serif;
+  font-size: 80px;
   font-size: 5rem;
   margin-bottom: 20px;
   text-transform: capitalize;
@@ -19,8 +20,14 @@ h1.title {
 
 /* ====================================== SECTION 1 ====================================== */
 #sec1.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -40,6 +47,7 @@ h1.title {
 
 /* =============================== S1 RIGHT =============================== */
 #sec1.container .right h2 {
+  font-size: 48px;
   font-size: 3rem;
   font-weight: 500;
   font-family: 'Ubuntu', sans-serif;
@@ -48,8 +56,13 @@ h1.title {
 
 #sec1.container .right a {
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  font-size: 24px;
   font-size: 1.5rem;
 }
 
@@ -82,6 +95,7 @@ h1.title {
 
   /* ======================= SECTION 1 ======================= */
   #sec1.container {
+    -ms-flex-flow: column;
     flex-flow: column;
   }
 

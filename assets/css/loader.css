@@ -1,9 +1,15 @@
 /* ======================================= LOADER ======================================= */
 .loader-container {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background: var(--blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   left: 0;
   position: fixed;
@@ -13,6 +19,7 @@
 }
 
 .loader-container.complete {
+  -webkit-animation: doneLoading 0.2s forwards;
   animation: doneLoading 0.2s forwards;
 }
 
@@ -27,12 +34,15 @@
   left: 0;
   position: absolute;
   top: 0;
+  -webkit-transform: rotate(calc(18deg * var(--i)));
   transform: rotate(calc(18deg * var(--i)));
   width: 100%;
 }
 
-.loader-container .loader span::before {
+.loader-container .loader span:before {
+  -webkit-animation: animate 2s linear infinite;
   animation: animate 2s linear infinite;
+  -webkit-animation-delay: calc(0.1s * var(--i));
   animation-delay: calc(0.1s * var(--i));
   background: var(--white);
   border-radius: 50%;
@@ -45,7 +55,9 @@
 }
 
 .loader-container .loader .icon {
+  -webkit-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
+  -webkit-animation-delay: -1s;
   animation-delay: -1s;
   height: 100%;
   left: 0;
@@ -54,51 +66,107 @@
   width: 100%;
 }
 
-.loader-container .loader .icon::before {
+.loader-container .loader .icon:before {
   content: url('../img/icon/ic_plane.svg');
   height: 30px;
   left: 85px;
   position: absolute;
   top: 80px;
+  -webkit-transform: rotate(118deg);
   transform: rotate(118deg);
   width: 50px;
 }
 
 /* ============================== ANIMATIONS ============================== */
-@keyframes doneLoading {
+@-webkit-keyframes doneLoading {
   0% {
     opacity: 1;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
   }
   99% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
     opacity: 0;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+}
+@keyframes doneLoading {
+  0% {
+    opacity: 1;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+  }
+  99% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+    -webkit-transform: translateX(-200%);
     transform: translateX(-200%);
   }
 }
 
-@keyframes animate {
+@-webkit-keyframes animate {
   0% {
+    -webkit-transform: scale(0);
     transform: scale(0);
   }
 
   10% {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 
   60%,
   100% {
+    -webkit-transform: scale(0);
     transform: scale(0);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  10% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+
+@-webkit-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(370deg);
+    transform: rotate(370deg);
   }
 }
 
 @keyframes rotating {
   0% {
+    -webkit-transform: rotate(10deg);
     transform: rotate(10deg);
   }
 
   100% {
+    -webkit-transform: rotate(370deg);
     transform: rotate(370deg);
   }
 }
